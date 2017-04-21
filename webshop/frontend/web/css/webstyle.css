@@ -1,0 +1,60 @@
+.navbar-default{
+	border:none;
+	background: none;
+	margin-top:20px;
+}
+.header-main{
+	background: #3a3f44;
+
+}
+.navbar-default .navbar-nav > .active > a,
+ 
+  .navbar-default .navbar-nav > .active > a:focus {
+    background-color: #e7e7e7;
+    border: 2px none;
+    border-radius: 2px;
+    color: #555;
+}
+
+.navbar-nav a:hover{
+
+	border-radius: 2px;
+}
+.navbar-brand > img {
+    display: block;
+    margin-top: -10px;
+}
+.header-section{
+	 padding-top: 20px;
+}
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a:hover{
+	 background-color: #e7e7e7;
+    border: 2px none;
+    border-radius: 2px;
+    color: #555;
+}
+.ex-product >ul >li{
+	list-style: none;
+}
+.thumbnails >li{
+	list-style: none;
+	padding-left: 20px;
+}
+.carousel-inner{
+	padding-left: 0px;
+}
+
+footer ul>li {
+	list-style: none;
+}
+footer{
+	background: 
+}
+.section-main {
+	padding-top: 30px;
+}
+
