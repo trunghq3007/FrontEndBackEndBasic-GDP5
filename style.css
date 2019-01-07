@@ -1,0 +1,62 @@
+.header{
+    background-color: #dfd9d926;
+    border-bottom: solid 1px red;
+}
+.main{
+    display: block;
+}
+.content1{
+    height: 600px;
+}
+#logo{
+    width: 150px;
+    height: 80px;
+}
+#HOTLINE{
+    float: right;
+    padding-top: 25px;
+    font-weight: 400;
+    font-size: 25px;
+}
+.form-register{
+    float: right;
+    position: relative;
+    width: 310px;
+    height: 480px;
+    background-image: url("img/registe-bg.png");
+    top: 100px;
+    right: 200px;
+}
+.background-content1{
+    position: absolute;
+    margin-left: 120px;
+}
+.form {
+    margin-top: 150px;
+}
+.form input{
+    margin:5px;
+    width: 80%;
+}
+.form select{
+    margin:5px;
+    width: 80%;
+}
+.title-content2{
+    font-weight: 500;
+    font-size: 30px;
+    color: green;
+    margin-top: 15px;
+}
+.image-content2{
+    background-color: #e1790f;
+}
+.content2 h5{
+    color: green;
+}
+.image-content2{
+    height: 120px;
+}
+.content2 img{
+    padding:20px;
+}
