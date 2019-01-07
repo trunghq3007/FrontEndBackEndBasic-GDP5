@@ -213,44 +213,23 @@
                             </div>
                         </div>
                 </section>
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                          <li data-target="#myCarousel" data-slide-to="1"></li>
-                          <li data-target="#myCarousel" data-slide-to="2"></li>
-                        </ol>
-                      
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                          <div class="item active">
-                            <img src="la.jpg" alt="Los Angeles">
-                          </div>
-                      
-                          <div class="item">
-                            <img src="chicago.jpg" alt="Chicago">
-                          </div>
-                      
-                          <div class="item">
-                            <img src="ny.jpg" alt="New York">
-                          </div>
-                        </div>
-                      
-                        <!-- Left and right controls -->
-                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                          <span class="glyphicon glyphicon-chevron-left"></span>
-                          <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                          <span class="glyphicon glyphicon-chevron-right"></span>
-                          <span class="sr-only">Next</span>
-                        </a>
-                      </div>
+
+                <section class="section7">
+                    <p class="title">THÔNG TIN LIÊN HỆ</p>
+                    <p class="sub-title">ĐẠI DIỆN CHÍNH THỨC CỦA HỌC VIỆN CÔNG NGHỆ SOUTHBANK, ÚC</p>
+                    <p class="content">
+                        Công ty tư vấn du học Lisa Ho <br>
+                        38/14 Trần Khắc Chân, Quận 1, Tp. Hồ Chí Minh <br>
+                        Hotline: 0963.9999.30 - 0909.343.048 <br>
+                        Website: www.lisahostudyoverseas.com
+                    </p>
+                </section>
             </div>
         <!-- Start footer -->
-        <div class="footer">
-
-        </div>
+        <footer>
+            <p>KHAI GIẢNG: THÁNG 07/2014 VÀ THÁNG 01/2015</p>
+            <img id="footer" src="img/go-to-top.png" alt="">
+        </footer>
         <!-- End footer -->
     </div>
 
@@ -259,6 +238,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $('#footer').on('click', function(){
+            $("html, body").animate({ scrollTop: 0 }, 1000);
+        });
+    </script>
 </body>
 
 </html>

@@ -244,6 +244,7 @@ body {
 .content-wrapper .section5 {
     text-align: center;
     background-color: #e6e8ed;
+    padding-bottom: 2%;
 }
 
 .section5 .row{
@@ -258,4 +259,46 @@ body {
 
 .section5 img {
     padding-bottom: 3%;
+}
+
+/* Section 7 */
+.section7 {
+    padding: 0 12%;
+    text-align: center;
+    background-color: #ea8d0b;
+    padding-bottom: 5%;
+}
+
+.section7 .title{
+    color: #fff;
+    padding-top: 1% !important;
+    padding-bottom: 1% !important;
+}
+
+.section7 .sub-title{
+    color: #fff;
+}
+
+.section7 .content{
+    color: #fff;
+}
+
+/* --------------------------------FOOTER STYLE*/
+
+footer p {
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(148, 187, 64, 1);
+    color: #000;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+}
+
+footer img {
+    position: fixed;
+    right: 0;
+    bottom: 0;
 }
