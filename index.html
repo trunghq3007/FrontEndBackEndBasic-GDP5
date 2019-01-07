@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/resetcss.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="jquey/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- section 1 -->
+        <header>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="logo-southbank">
+                        <img src="img/logo-southbank.png" alt="">
+                    </div>
+                    <div class="logo-lisaho">
+                        <img src="img/logo-lisaho.png" width="150px" alt="">
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="hotline">
+                        <p>hotline: 09900.9090-9090.9090</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slidermain">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-12 col-sm-12">
+                        <div class="silder">
+                            <img src="img/slide.jpg" width="1000px" alt="">
+                            <div class="formRegister">
+                                <h2>Học viện công nghệ southbank, úc</h2>
+                                <p>Bạn còn thắc mắc về du học Úc? Vui lòng để lại thông tin dưới đây, chúng tôi sẽ liên
+                                    hệ
+                                    tư vấn nhanh nhất.</p>
+                                <form action="" method="POST">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="name" placeholder="Họ và tên">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="phone" placeholder="Điện thoại">
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option>Nơi ở</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option>Bạn đã tốt nghiệp</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option>Ngành đăng ký</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <p id="text"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email>
+                                    </div>
+                                    <button type="submit" onclick="submitfrom()" id="submitform" class="btn btn-success">Đăng
+                                        ký</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="setion1">
+            <div class="row ">
+                <div class="col-md-12">
+                    <h1>các bước để thành công</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="..." alt="...">
+                    </a>
+                </div>
+                ...
+            </div>
+        </section>
+        <!-- footer -->
+        <footer>
+            <div class="row footer1">
+                <div class="col-12">
+                    <div id="khaiGiang">
+                        <p>Khai giảng tháng 7/2014 và tháng 1/2015</p>
+                    </div>
+                    <div id="goTop">
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        $('#submitform').click(function () {
+            var name = $('#name').val();
+            var phone = $('#phone').val();
+            if(trim(name)==null || trim(name)==""){
+                $('#text').append("chua nhap ten");
+            }
+        });
+    });
+</script>
+
+</html>

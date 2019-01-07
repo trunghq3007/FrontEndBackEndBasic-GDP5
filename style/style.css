@@ -1,0 +1,72 @@
+body{
+    overflow-x: hidden;
+}
+header{
+    margin-top: 10px;
+}
+.logo-lisaho{
+    float: right;
+}
+.logo-southbank{
+    float: right;
+}
+.hotline{
+    float: left;
+}
+.hotline p {
+    text-transform: uppercase;
+    font-size: 16pt;
+    margin-top: 20px;
+}
+.slidermain{
+    background-color: azure;
+}
+.slider{
+    clear: both;
+    position: relative;
+}
+.btn{
+    width: 100%;
+}
+.formRegister{
+    width: 280px;
+    background-color: white;
+    border-top: 3px solid forestgreen;
+    padding: 15px;
+    top: 50px;
+    right: 90px;
+    position: absolute;
+}
+.formRegister h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: orange;
+    text-align: center;
+    font-weight: bold;
+}
+.formRegister p{
+    text-align: center;
+    font-size: 10pt;
+}
+.form-group {
+    margin-bottom: 5px;
+}
+.setion1 h1{
+    padding: 30px;
+    text-transform: uppercase;
+    color: #00cc00;
+    font-weight: bold;
+    font-size: 16pt;
+    text-align: center;
+}
+.footer1{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #00cc00;
+    text-align: center;
+    font-size: 16pt;
+    text-transform: uppercase;
+    padding: 5px;
+}
