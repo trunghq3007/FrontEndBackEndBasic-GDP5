@@ -1,0 +1,33 @@
+.slideLI-Group {
+    width: 25%;
+    float: left;
+}
+.slideLI-Group2 {
+    width: 200px;
+    height: 200px; 
+    text-align: center;
+    margin: 0 auto;
+}
+.slideLI-Group-image {
+    margin: 25% 0 25% 0;
+}
+.slideLI-Group-stile{
+    width: 200px;
+    height: 200px; 
+    text-align: center;
+    margin: 0 auto;
+}
+.slideLI-container {
+    width: 90%;
+    margin: 0 auto;
+}
+#background {
+    background: rgb(112, 107, 107);
+}
+.titleText-LI {
+    text-transform: uppercase;
+    text-align: center;
+    color: yellowgreen;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}

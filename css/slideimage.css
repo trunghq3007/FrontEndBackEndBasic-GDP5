@@ -1,0 +1,31 @@
+.titleText {
+text-transform: uppercase;
+text-align: center;
+color: yellowgreen;
+margin-top: 30px;
+margin-bottom: 40px;
+}
+.step-Group {
+    width: 25%;
+    float: left;
+}
+.step-Group2 {
+    width: 200px;
+    height: 200px; 
+    background-color:#e08b22f2;
+    text-align: center;
+    margin: 0 auto;
+}
+.step-Group-image {
+    margin: 25% 0 25% 0;
+}
+.step-Group-stile{
+    width: 200px;
+    height: 200px; 
+    text-align: center;
+    margin: 0 auto;
+}
+.step-container {
+    width: 80%;
+    margin: 0 auto;
+}
