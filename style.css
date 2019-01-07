@@ -1,0 +1,55 @@
+
+*, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block; 
+    clear: both;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.img-logo{
+    width: 50%;
+    float: left;
+}
+
+.hotline{
+    width: 50%;
+    float: left;
+}
+
+#form-info{
+    border: 1px solid #ccc;
+    border-top: 5px solid #9cc813;
+    width: 320px; 
+    border-radius: 2px;
+    background-color: white;
+    z-index: 999999;
+}
+
+.form-group{
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+input, select{
+    width: 100%; 
+    padding: 6px; 
+}
+
+#btn-login{
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+    background-color:#9cc813;
+    color: white
+}

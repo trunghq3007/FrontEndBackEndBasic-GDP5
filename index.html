@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- begin header -->
+        <div class="header clearfix">
+            <div class="img-logo" style="text-align: center">
+
+                <img src="images/logo-lisaho.png" alt="" width="200px" height="60px" style="margin: 10px 5px 5px 0px;">
+
+                <img src="images/logo-southbank.png" alt="" width="200px" height="60px" style="margin-top: 10px;">
+
+            </div>
+            <div class="hotline" style="margin-top: 20px; line-height: 60px">
+                <h2>HOTLINE: 0963.9999.30 - 0909.343.048</h2>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+        <!-- end header -->
+
+        <div class="slider">
+            <div style="position: relative;">
+                <img src="images/slide.jpg" alt="slider-image" width="100%" height="60%" style="width: 100%" height="500px;">
+                <form action="" method="GET" id="form-info" style="position: absolute; bottom: 10px; right: 150px;">
+                    <h3 style="color: #d99b5cf7; margin:10px; text-align: center; font-weight: 700;">HỌC VIỆN CÔNG NGHỆ
+                        SOUTHBANK, ÚC</h3>
+                    <p style="color: #7c7575; text-align: center">Bạn còn thắc mắc về du học Úc? vui lòng để lại thông
+                        tin
+                        dưới đây, chúng tôi sẽ liên hệ tư vấn nhanh nhất. </p>
+                    <div class="form-group">
+                        <input type="text" placeholder="Họ và tên" id="username">
+                        <p id="message-username-error" style="color: red"></p>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Điện thoại">
+                    </div>
+                    <div class="form-group">
+                        <select name="" id="">
+                            <option value="">Nơi ở</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select name="" id="">
+                            <option value="">Bạn đã tốt nghiệp ?</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select name="" id="">
+                            <option value="">Ngành đăng ký</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" id="email">
+                        <p style="color: red;" id="message-email-error"></p>
+                    </div>
+                    <div class="form-group">
+                        <input type="button" id="btn-login" value="Đăng ký" onclick="validation()" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <h2 style="text-transform: uppercase; text-align: center; color: #9cc813; margin: 20px 0px 20px 0px;">các
+                bước để du học thành công</h2>
+            <div>
+                <div style="width: 25%; float: left;">
+                    <div style="width: 220px; height: 200px; background-color: #d7a534; text-align: center; margin: 0 auto;">
+                        <img src="images/step-1.png" alt="" style="margin-top: 25%; margin-bottom: 25%;">
+
+                    </div>
+                    <div style="width: 220px; height: 200px; text-align: center; margin: 0 auto;">
+                        <h4 style="text-transform: uppercase; color: #9cc813">Bước 1: đăng ký</h4>
+                        <p>đăng ký để lại thông tin của bạn</p>
+                    </div>
+
+                </div>
+                <div style="width: 25%; float: left;">
+                    <div style="width: 220px; height: 200px; background-color: #d7a534; text-align: center; margin: 0 auto;">
+                        <img src="images/step-2.png" alt="" style="margin-top: 25%; margin-bottom: 25%">
+                    </div>
+                    <div style="width: 220px; height: 200px; text-align: center; margin: 0 auto;">
+                        <h4 style="text-transform: uppercase; color: #9cc813">Bước 2: được tư vấn từ bộ phận tuyển sinh</h4>
+                        <p>chuyên gia tư vấn của chúng tôi sẽ giúp bạn chọn ngành học phù hợp</p>
+                    </div>
+                </div>
+                <div style="width: 25%; float: left;">
+                    <div style="width: 220px; height: 200px; background-color: #d7a534; text-align: center; margin: 0 auto;">
+                        <img src="images/step-3.png" alt="" style="margin-top: 25%; margin-bottom: 25%">
+                    </div>
+                    <div style="width: 220px; height: 200px; text-align: center; margin: 0 auto;">
+                        <h4 style="text-transform: uppercase; color: #9cc813">Bước 3: hoàn thành hồ sơ</h4>
+                        <p>Chuyên gia tư vấn sẽ hỗ trợ bạn hoàn thành hồ sơ nhập học và visa chu đáo</p>
+                    </div>
+                </div>
+
+                <div style="width: 25%; float: left;">
+                    <div style="width: 220px; height: 200px; background-color: #d7a534; text-align: center; margin: 0 auto;">
+                        <img src="images/step-4.png" alt="" style="margin-top: 25%; margin-bottom: 25%">
+                    </div>
+                    <div style="width: 220px; height: 200px; text-align: center; margin: 0 auto;">
+                        <h4 style="text-transform: uppercase; color: #9cc813">Bước 4: trải nhiệm học tập quốc tế</h4>
+                        <p>bắt đầu học tập tại môi trường giáo dục hàng đầu thế giới</p>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+                <div style="text-align: center">
+                    <button type="button" style="background: #9cc813; padding: 8px 10px 8px 10px; border-radius: 5px; border: none;"><span
+                            style="font-size: 16px; font-weight: 600; color: white;">Đăng ký</span></button>
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color: #ccc;">
+            <h2 style="color: #9cc813; text-transform: uppercase; text-align: center;">Lợi ích khi tham gia học tập tại
+                học viện SOUTHBANK</h2>
+
+            <div style="margin: 5px;">
+                <div style="width: 16.66%;  text-align: center; float: left;">
+                    <img src="images/benefit-1.jpg" alt="" style="width: 150px; height: 120px;">
+                    <p>Không cần thi đầu vào</p>
+                </div>
+                <div style="width: 16.66%;  text-align: center; float: left;">
+                    <img src="images/benefit-2.jpg" alt="" style="width: 150px; height: 120px;">
+                    <p>Không cần chứng minh tài chính</p>
+                </div>
+                <div style="width: 16.66%;  text-align: center; float: left;">
+                    <img src="images/benefit-3.jpg" alt="" style="width: 150px; height: 120px;">
+                    <p>học phí và phí sinh hoạt cạnh tranh</p>
+                </div>
+                <div style="width: 16.66%;  text-align: center; float: left;">
+                    <img src="images/benefit-4.jpg" alt="" style="width: 150px; height: 120px;">
+                    <p>Không cần thi đầu vào</p>
+                </div>
+                <div style="width: 16.66%;  text-align: center; float: left;">
+                    <img src="images/benefit-5.jpg" alt="" style="width: 150px; height: 120px;">
+                    <p>Không cần thi đầu vào</p>
+                </div>
+                <div style="width: 16.66%;  text-align: center; float: left;">
+                    <img src="images/benefit-6.jpg" alt="" style="width: 150px; height: 120px;">
+                    <p>Không cần thi đầu vào</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
