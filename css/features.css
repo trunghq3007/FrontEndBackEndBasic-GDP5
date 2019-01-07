@@ -1,0 +1,63 @@
+.tips.generic-section {
+	
+}
+.tips.generic-section .container  .btn.btn-success {
+	margin: 0 0 1em;
+}
+.tips .item {
+	padding: 0;
+	cursor: pointer;
+}
+.tips .item span.ico {
+	position: relative;
+}
+.tips .item span.ico:after {
+	border-color: #DE9717 transparent transparent;
+	border-right: 10px solid transparent;
+	border-style: solid;
+	border-width: 10px 10px 0;
+	bottom: -10px;
+	content: " ";
+	display: block;
+	height: 0;
+	left: 50%;
+	margin-left: -10px;
+	margin-top: 0;
+	position: absolute;
+	width: 0;
+}
+
+.tips .item h4 {
+	color: #34497c;
+	font-size: 2.2em;
+	margin: 0 0 0.5em;
+	font-weight:bold;
+}
+.tips .item p {
+	font-size: 13px;
+	color: #555555;
+	line-height:24px;
+}
+.tips .item span.ico {
+	background: none repeat scroll 0 0 #DE9717;
+	display: block;
+	height: 0;
+	margin: 0 auto 25px;
+	padding-bottom: 63%;
+	width: 100%;
+}
+.tips .item:hover span.ico {
+	background: #8FB834;
+}
+.tips .item:hover span.ico:after {
+	border-top-color: #8FB834;
+}
+.tips .item:hover h4, .tips .item:hover p {
+	color:#253458;
+}
+.tips .item span.ico img {
+	height: auto;
+	margin-top: 11%;
+	width: 40%;
+}
+

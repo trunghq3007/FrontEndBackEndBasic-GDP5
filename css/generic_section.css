@@ -1,0 +1,27 @@
+.generic-section .container h2 {
+	line-height: 0.9em;
+	margin: 0 0 0.15em;
+	font-family: 'BebasRegular';
+	font-size: 3.1em;
+	line-height: 1.3em;
+}
+.generic-section .container .intro-text {
+	font-size: 1.5em;
+	line-height: 1.5em;
+	color: #555555;
+}
+.generic-section .container {
+	position: relative;
+	z-index: 2;
+}
+.tips.first.generic-section .container .intro-text {
+	/*margin-bottom: -2.1%;*/
+}
+.tips.first.generic-section {
+	padding: 2.7% 0 0%;
+}
+.tips.why.generic-section .container .intro-text {
+	margin-bottom: 3.3%;
+}
+.tips.why.generic-section {	
+}

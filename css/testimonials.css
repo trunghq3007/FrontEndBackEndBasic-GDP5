@@ -1,0 +1,76 @@
+/* Testimonials ----------------------------*/
+/*.testimonials {
+	padding: 7.4% 0 9.5% 0;
+	
+}
+.testimonials .span12 {
+	padding:0 12%;
+}*/
+.list-testimonials, .list-testimonials li {
+	color: #253458;
+	list-style: none outside none;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.list-testimonials li img {
+	display: block;
+	float: none;
+	height: auto !important;
+	margin: 0 auto 3%;
+	width: auto !important;
+	/*border: 4px solid rgba(0, 0, 0, 0.1);*/
+	width:100%;
+}
+.list-testimonials li p.comment {
+	font-size: 3em;
+	font-style: italic;
+	font-weight: bold;
+	line-height: 1.5em;
+	padding: 0 40px;
+}
+.list-testimonials li p.date {
+	font-size: 1.4em;
+	margin-top: 2.5%;
+	position: relative;
+	text-transform: uppercase;
+	padding: 1.4% 25px 0;
+}
+.list-testimonials li p.date span {
+	position: absolute;
+	width: 32px;
+	top: 0px;
+	left: 50%;
+	height: 2px;
+	display: block;
+	margin-left: -16px;
+	background: #FFF;
+}
+.row-fluid {
+	position: relative;
+}
+.rslides_nav {
+
+	display: block;
+	height: 40px;
+	margin-top: 17%;
+	position: absolute;
+	text-indent: -9999px;
+	top: 0;
+	width: 22px;
+	z-index: 99;
+}
+.rslides_nav.prev {
+	left: 0;
+}
+.rslides_nav.next {
+	right: 0;
+	background-position: 100% 0;
+}
+
+.generic-section p {
+	font-size: 1.5em;
+	line-height: 1.5em;
+	margin-bottom: 1em;
+}

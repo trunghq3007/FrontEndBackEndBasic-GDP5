@@ -1,0 +1,214 @@
+.join-form {
+	position: relative;
+	overflow: hidden;
+}
+.join-form .container {
+	margin-bottom: 25px;
+}
+.slider-container {
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
+.join-form .container {
+	position: relative;
+	z-index: 999;
+}
+.join-form .rslides {
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+.join-form .rslides_tabs {
+	bottom: 10px;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	z-index: 9999;
+}
+.join-form .rslides_tabs li {
+	display: inline-block;
+	margin: 0 3px;
+}
+.join-form .rslides_tabs li a:hover, .join-form .rslides_tabs li.rslides_here a {
+	background-position: 0 0;
+}
+.join-form .rslides_tabs li a {
+	
+	display: block;
+	height: 19px;
+	text-indent: -9999px;
+	width: 19px;
+}
+.join-form {
+	position: relative;
+	overflow: hidden;
+}
+
+.join-form .formFoot {
+	
+	bottom: 65px;
+	height: 101px;
+	left: 0;
+	margin-bottom: -40px;
+	position: absolute;
+	width: 100%;
+}
+.join-form .formFoot:before, .join-form .formFoot:after {
+	bottom: -15px;
+	content: " ";
+	display: block;
+	width: 20px;
+	height: 116px;
+	position: absolute;
+	top: 0;
+}
+.join-form .formFoot:before {
+	
+	right: -20px;
+}
+.join-form .formFoot:after {
+	
+	left: -20px;
+}
+.join-form .formFoot .btn {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #8FB834;
+	border-radius: 3px 3px 3px 3px;
+	color: #FFF;
+	display: block;
+	font-size: 22px;
+	font-weight:bold;
+	margin: 43px auto;
+	width: 250px;
+	height:50px;
+}
+
+#joinForm .row-fluid [class*="span"] {
+	margin-bottom: 5px;
+}
+
+.help-block.footForm {
+	padding-top: 143px;
+}
+
+.form-container {
+	background: url(img/registe-bg.png) no-repeat;
+	margin: 3.5% 0;
+	width: 314px;	
+	position: relative;	
+	height:480px;
+}
+.form-container form legend {
+	color: #FFF;
+	font-size: 2.4em;
+	
+	text-transform: uppercase;
+}
+.form-container form legend span {
+	background: #4b69b1;
+	padding: 0 11px;
+}
+.form-container form p {
+	color: #FFF;
+	font-size: 1.4em;
+	margin-bottom: 1.5em;
+}
+
+.join-form h4 {
+	color: white;
+	display: inline-block;
+	font-size: 13px;
+	margin-right: 5px;
+}
+.jstyling-checkbox, .jstyling-radio {
+	left: 0;
+	margin-top: -10px;
+	position: absolute;
+	top: 50%;
+}
+
+.jstyling-select {
+	border: 0 none;
+	cursor: pointer;
+	width: 100%;
+}
+.jstyling-select {
+	margin: 0 0 20px;
+}
+.jstyling-select-l {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-width: 0;
+	left: 0;
+	max-height: 124px;
+	top: 45px;
+}
+.jstyling-select-l div {
+	background: none repeat scroll 0 0 #000000;
+	border-top: 1px dotted #CCCCCC;
+	color: white;
+	font-size: 12px;
+	height: auto;
+	padding: 9px 5px;
+}
+
+.jstyling-select-t {
+	font-family: arial;
+	font-size: 12px;
+	height: 45px;
+	line-height: 45px;
+	text-indent: 8px;
+	width: 100%;
+}
+.jstyling-select-s {
+	-moz-box-sizing: border-box;
+	
+	border: 0 none;
+	color: white;
+	height: 45px;
+	line-height: 38px;
+	padding: 0;
+	width: 100%;
+}
+
+.jstyling-select-s {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+	color: white;
+	height: 45px;
+	line-height: 45px;
+	width: 100%;
+}
+.radio, .checkbox {
+	position: relative;
+}
+.inline.male span, .inline.female span {
+	background: none no-repeat scroll 0 0 transparent;
+	display: block;
+	height: 30px;
+	overflow: hidden;
+	position: relative;
+	text-indent: -9999px;
+	top: -5px;
+	width: 15px;
+}
+.help-block {
+	color: white;
+	font-size: 12px;
+}
+.help-block a {
+	color: white;
+	text-decoration: none;
+}
+.help-block a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+

@@ -1,0 +1,297 @@
+/* Video ----------------------------*/
+.generic-section {
+	/*padding: 5.7% 0;*/
+}
+
+.video.generic-section {
+	/*padding: 7.2% 0 2.5%;*/
+}
+.video.generic-section .container .intro-text {
+	margin-bottom: 3.3%;
+}
+
+.list-features {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.list-features li {
+	
+	color: #555555;
+	display: block;
+	font-size: 1.4em;
+	line-height: 20px;
+	margin-bottom: 1.5em;
+	padding-left: 25px;
+}
+
+
+
+
+
+/* Gallery --------------------------------------------------------*/
+.generic-section.wall {
+	/*padding: 2.5% 0 0 0;*/
+}
+.generic-section.wall .container .intro-text {
+	margin-bottom: 0.4em;
+}
+.video.generic-section {
+	/*padding: 7.2% 0 2.5%;*/
+}
+
+.genericBox h3 {
+	color: #FE9900;
+	font-family: 'BebasRegular';
+	font-size: 3.5714em;
+	line-height: 1.3em;
+	margin: 1em 0 0.5em;
+	text-align: center;
+}
+
+#gallery {
+	display: block;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#gallery li {
+	float: left;
+	-moz-transition: all 0.2s ease-out 0s;
+	-webkit-transition: all 0.2s ease-out 0s;
+	-o-transition: all 0.2s ease-out 0s;
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	margin-bottom: 0px;
+}
+
+#gallery li img {
+	display: block !important;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+#gallery li[data-size="1"] {
+	width: 33.3%;
+	padding-bottom: 33.3%;
+}
+#gallery li[data-size="2"] {
+	width: 66.6%;
+	padding-bottom: 33.3%;
+}
+#gallery li[data-size="3"] {
+	width: 33.3%;
+	padding-bottom: 66.6%;
+}
+#gallery li[data-size="4"] {
+	width: 66.6%;
+	padding-bottom: 66.6%;
+}
+
+#gallery li a {
+	/*border: 4px solid #161616;*/
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+#gallery .col {
+	float: left;
+	width: 33.33333%;
+	overflow: hidden;
+}
+#gallery li a div i:before {
+	color: #141414;
+	display: block;
+	font-size: 60px;
+	left: 50%;
+	margin-left: -30px;
+	margin-top: -30px;
+	position: absolute;
+	top: 50%;
+}
+#gallery li a div {
+	display: none;
+	background: #F6AE42;
+	background: rgba(255,51,52,0.89);
+	bottom: -100%;
+	color: #FFFFFF;
+	height: 100%;
+	padding: 7px 0;
+	position: absolute;
+	-moz-transition: all 0.7s ease 0s;
+	-webkit-transition: all 0.7s ease 0s;
+	transition: all 0.7s ease 0s;
+	width: 100%;
+	z-index: 9;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#gallery li a:hover div {
+	bottom: 0;
+}
+#gallery li a img {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	-moz-transition: all 1.2s ease 0s;
+	-webkit-transition: all 1.2s ease 0s;
+	transition: all 1.2s ease 0s;
+	left: 0;
+	top: 0;
+}
+#gallery li a:hover img {
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	zoom: 1.2;
+}
+
+
+/* Pricing Tables ----------------------------*/
+.generic-section.pricing {
+	padding: 3.9% 0 7.5%;
+}
+.generic-section.pricing .container .intro-text {
+	margin-bottom: 2.1em;
+}
+.pricing {
+	position: relative;
+}
+.pricing .item {
+	background: #FFF;
+}
+.pricing .item h3 {
+	color: #8FB834;
+	font-size: 2.5em;
+}
+.pricing .item ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.pricing .item ul li {
+	border-bottom: 1px solid #5a75b6;
+	display: block;
+	line-height: 3em;
+	color: #ffffff;
+	font-size: 1.4em;
+}
+.pricing .item .btn {
+	margin: 5%;
+}
+.btn {
+	font-family: "Times New Roman", Times, serif;
+	background: #253458;
+	border: 0 none;
+	color: white;
+	text-shadow: none;
+}
+.pricing .btn-large {
+	border-radius: 3px;
+	font-size: 1.8em;
+	font-weight: 300;
+	padding: 15px 40px;
+}
+.btn:hover, .btn:focus, .btn:active, .btn.active, .btn.disabled, .btn[disabled] {
+	background-color: #68080a;
+	color: #FFFFFF;
+}
+.btn:hover {
+	opacity:0.7;
+}
+
+.pricing .item:hover {
+	background: #FFF;
+}
+.pricing .item:hover p{
+	background: #8FB834;
+	color:#FFF;
+}
+.pricing .item p{
+	color:#8FB834;
+}
+.pricing .item:hover h3 {
+	color: #253458;
+}
+.pricing .item:hover ul li {
+	border-color: #f9ac14;
+	color: #fff;
+}
+.pricing .item:hover .btn {
+	background: #253458;
+	color:#8FB834;
+}
+
+
+
+
+
+/* Newssletter -----------------------*/
+.newsletter {
+	background: #8FB834;
+	padding: 2.6% 0 1.9% 0;
+}
+.newsletter .fields {
+	text-align: center;
+}
+.newsletter .fields label {
+	color: white;
+	display: inline-block;
+	font-size: 2.4em;
+	font-weight: 300;
+	margin: 0 5px;
+	padding: 0;
+	position: relative;
+	top: 0px;
+	white-space: nowrap;
+	padding: 10px 10px;
+}
+.newsletter .fields input {
+	display: inline-block;
+	border-radius: 2px;
+}
+.newsletter .fields input.btn {
+	width: auto;
+	height:auto;
+	background:#5a080f;
+	text-transform:uppercase;
+	font-size: 1.8em;
+	font-weight: 300;
+	border:0;
+	border-radius:4px;
+	padding: 14px 20px;
+	margin: 0;
+	vertical-align: top;
+}
+.btn {
+	box-shadow: none;
+}
+.newsletter .fields input.btn:hover {
+	background-color:#976401;
+}
+.newsletter .fields input.large {
+	border: 0 none;
+	color: #999999;
+	font-size: 1.6em;
+	font-weight: 400;
+	margin: 0 10px 10px;
+	padding: 16px 10px;
+}
+.newsletter .fields div {
+	display: inline-block;
+}
+
+section {
+	overflow: hidden;
+}
+
+

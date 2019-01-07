@@ -1,0 +1,131 @@
+header {	
+	border-bottom: 1px solid #304c8e;
+	padding: 10px 0 40px 0;
+}
+
+header .slogan {
+	margin: 5px 0 0 10px;
+	line-height: 38px;
+	color: white;
+	font-size: 12px;
+}
+.btn-login {
+	background: none repeat scroll 0 0 #243357;
+	-webkit-border-radius: 4px; 
+    -moz-border-radius: 4px; 
+    border-radius: 4px;
+	margin:0;
+	color: white;
+	display: block;
+	float: right;
+	font-size: 12px;
+	height: 38px;
+	line-height: 38px;
+	width: 113px;
+	padding: 0 15px;
+	overflow: hidden;
+	-webkit-transition: 700ms linear all;
+	-moz-transition: 700ms linear all;
+	-ms-transition: 700ms linear all;
+	-o-transition: 700ms linear all;
+	transition: 700ms linear all;
+}
+.btn-login a {
+	color: white;
+}
+.btn-login * {
+
+}
+.btn-login.show {
+	width: 417px;
+}
+.btn-login.show .toggleText {
+	display: none;
+}
+.btn-login.show .form-inline {
+	opacity: 1;
+}
+.btn-group.open .btn.dropdown-toggle {
+	background-color: #5a080f;
+}
+.bootstrap-select.btn-group, .bootstrap-select.btn-group[class*="span"] {
+	margin-bottom: 10px;
+}
+
+
+.bootstrap-select.btn-group .dropdown-menu {
+	max-height: 146px !important;
+	}
+	.caret {
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 4px solid #FFFFFF;
+	content: "";
+	display: inline-block;
+	height: 0;
+	vertical-align: top;
+	width: 0;
+}
+.btn-login .form-inline {
+	opacity: 0;
+	-webkit-transition: 300ms linear all 700ms;
+	-moz-transition: 300ms linear all 700ms;
+	-ms-transition: 300ms linear all 700ms;
+	-o-transition: 300ms linear all 700ms;
+	transition: 300ms linear all 700ms;
+}
+.btn-login .input-prepend .add-on:first-child, .btn-login .input-prepend .btn:first-child {
+	background: none repeat scroll 0 0 white;
+	border: 0 none;
+	border-radius: 0 0 0 0;
+	vertical-align: inherit;
+}
+.btn-login input.span2, .btn-login textarea.span2, .btn-login .uneditable-input.span2 {
+	border: 0 none;
+	border-radius: 0 0 0 0;
+	font-family: inherit;
+	font-size: 12px;
+	padding: 2px 5px;
+	width: 106px;
+	min-height: 20px !important
+}
+.btn-login .input-append .add-on, .btn-login .input-prepend .add-on {
+	padding: 2px 2px;
+}
+.btn-login button.btn, .btn-login input.btn[type="submit"] {
+	background: none repeat scroll 0 0 #5a080f;
+	border-radius: 0 0 0 0;
+	padding: 2px 15px;
+	font-family: inherit;
+	font-size: 15px;
+
+}
+.btn-login .form-search .input-append, .btn-login .form-inline .input-append, .btn-login .form-search .input-prepend, .btn-login .form-inline .input-prepend {
+	margin-right: 5px;
+}
+
+.input-prepend .add-on i, .input-prepend .btn i {
+	color: #ccc;
+	font-size: 1.2em;
+}
+
+.btn-login a {
+	display: inline-block;
+}
+.btn-login form {
+	display: inline-block;
+}
+input[type="submit"]:hover{
+	opacity:0.7;
+}
+.btn-login .toggle {
+	display: inline-block;
+	height: 18px;
+	margin: 0 10px 0 0;
+	position: relative;
+	top: 5px;
+	width: 18px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
