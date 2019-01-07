@@ -1,0 +1,248 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    height: 70px;
+    width: 100%;
+}
+
+.logo {
+    margin-left: 20%;
+}
+
+.hotline {
+    margin-right: 20%;
+}
+
+.logo img{
+    width: 29%;
+    padding: 1%;
+}
+
+/* Banner */
+
+.banner-area{
+    margin: 0px auto;
+    height: 500px;
+    padding: 0px;
+    background-color: #e6e8ed;
+}
+
+.banner{
+    height: 100%;
+    margin: 0px 15%;
+    background: no-repeat;
+    background-size: 100%;
+}
+
+/* Form in banner  */
+.register{
+    background-color: #fff;
+    width: 22%;
+    padding: 1%;
+    margin-top:10%;
+    margin-right: 14%;
+    border-top: solid #9ce54e 5px;
+    text-align: center;
+}
+
+.register .title-form{
+    text-transform: uppercase;
+    color:#ea8d0b;
+    word-wrap: break-word;
+    font-weight: bold;
+    font-size: 110%;
+}
+
+.register .content-form{
+    font-size: 72%;
+}
+
+.register form input,select{
+    margin-bottom: 4%;
+    width: 95%;
+    padding: 1%;
+    padding-left: 4%;
+    border: none;
+    border: solid 1px #ccc;
+    border-radius: 3px;
+    font-size: 95%;
+}
+
+.register form select{
+ margin-bottom: 4% !important;
+}
+
+#submit-register{
+    background-color: #85ce37;
+    height: 40px;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.content-wrapper .section1 {
+    padding: 0 15%;
+    text-align: center;
+}
+
+.content-wrapper .section1 img {
+    width: 70%;
+    height: 120%;
+    background-color:#EA8D0B;
+    padding-left: 25%;
+    padding-top: 10%;
+    padding-right: 25%;
+    padding-bottom: 10%;
+}
+
+.content-wrapper .section1 button {
+    width: 150px;
+    margin-bottom: 20px;
+    background-color: rgba(148, 187, 64, 1);
+    color: #fff;
+    font-weight: bold;
+}
+
+.content-wrapper .section1 button:active {
+    background-color: rgba(85, 107, 37, 1);
+}
+
+/* -----------section 2 */
+
+.content-wrapper .section2 {
+    padding: 0 15%;
+    text-align: center;
+    background-color: rgba(228, 228, 228, 1);
+}
+
+.content-wrapper .section2 img {
+    padding-bottom: 10px;
+    width: 70%;
+    height: 120%;
+}
+
+/* -------- section 3 */
+
+.content-wrapper .section3 {
+    padding: 0 15%;
+    text-align: center;
+    background-image: url(img/benefit-2-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: peru;
+}
+
+.content-wrapper .section3 img {
+    padding-bottom: 10px;
+    width: 70%;
+    height: 120%;
+
+}
+
+
+/* -------- section 4 */
+
+.content-wrapper .section4 {
+    padding: 0 15%;
+    text-align: center;
+}
+
+.content-wrapper .section4 img {
+    padding-bottom: 10px;
+    width: 70%;
+    height: 120%;
+}
+
+.content-wrapper .section4 .right {
+    width: 20%;
+    height: 40%;
+    padding-top: 8%;
+}
+
+.content-wrapper .section4 button {
+    width: 150px;
+    margin-bottom: 20px;
+    background-color: peru;
+    color: #fff;
+    font-weight: bold;
+}
+
+ /* Section 5 */
+
+.content-wrapper .section5 {
+    text-align: center;
+    background-color: #e6e8ed;
+    padding-bottom: 10%;
+}
+
+.section5 .row{
+    margin: 0px 8%;
+    text-align: center;
+}
+
+.section5 .col-lg-1{
+    width: 11% !important;
+    margin-right: 3% !important;
+}
+
+.section5 img {
+    padding-bottom: 3%;
+}
+
+/* -------- section 6 */
+
+.content-wrapper .section6 {
+    padding: 0 15%;
+    text-align: center;
+    background-image: url(img/benefit-6.jpg);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-color: aquamarine;
+
+}
+
+.content-wrapper .section6 img {
+    width: 15%;
+    height: 30%;
+
+}
+
+/* -------- common */
+
+.content-wrapper .title {
+    margin: 0;
+    padding: 50px 0;
+    font-weight: bold;
+    color: rgba(148, 187, 64, 1);
+    font-size: calc(12px + 0.8vw);
+}
+
+
+.content-wrapper .sub-title {
+    padding: 0 20px;
+    font-weight: bold;
+    color: rgba(148, 187, 64, 1);
+}
+
+/* --------------------------------FOOTER STYLE*/
+
+footer p {
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(148, 187, 64, 1);
+    color: #000;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+}
+
+footer img {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
