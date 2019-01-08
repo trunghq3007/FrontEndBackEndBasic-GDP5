@@ -1,265 +1,571 @@
 <!DOCTYPE html>
-    <html>
+<html lang="en" class=" js no-touch backgroundsize csstransforms3d csstransitions">
 
-    <head lang="en">
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Assignment1</title>
-        <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="stylecss.css" rel="stylesheet">
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>Assignment1</title>
+
 </head>
+
+
 <body>
-        <div id="div_content">
-		
+	<!--end HOTLINE -->
+	<div id="div_content">
+		<center>
 			<header>
-				<div class="wrapper-container" style="margin-bottom: 1px;">
+				<div class="container clearfix" style="margin-bottom: 25px;">
 					<!--logo-->
-					<a href="#" id="logo" class="logo-galery" style="margin:-15px 20px 0px 150px;" target="_blank"><img
+					<a href="http://lisahostudyoverseas.com" id="logo" class="pull-left" style="margin:-15px 20px 0px 150px;" target="_blank"><img
 						 src="./img/logo-lisaho.png" style="width:150px;"></a>
-					<a href="#" id="logo" class="logo-galery" target="_blank"><img src="./img/logo-southbank.png"></a>
-					<div class="hot-line" style="margin:150px 80px 0px 0px">
+					<a href="www.southbank.edu.au" id="logo" class="pull-left" target="_blank"><img src="./img/logo-southbank.png"></a>
+					<div class="pull-right" style="margin:20px 150px 0px 0px">
 						<span style="font-size:16pt;font-weight:bold">HOTLINE: 0963.9999.30 - 0909.343.048</span>
 					</div>
 				</div>
-            </header>
+			</header>
+
+			<!-- Slider -->
+			<section class="join-form" style="margin-bottom:-25px;background-color:red;height:600px;">
+				<div class="slider-container">
+					<img src="C:\Users\lenovo\Desktop\kopie\New folder\FrontEndBasic-GDP5-tthyen\img\slide.jpg" alt="">
+				</div>
+				<div class="container">
+					<div class="row-fluid">
+						<div class="span12">
+							<div class="form-container pull-right box animated pulse" style="margin:120px 150px 0 0">
+								<fieldset>
+									<div class="row-fluid">
+										<div class="span12">
+											<input id="iName" type="text" placeholder="Họ và tên" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Họ và tên'"
+											 style="margin:150px 0 10px 0;width:240px;">
+										</div>
+									</div>
+
+									<div class="row-fluid">
+										<div class="span12">
+											<input id="iPhone" type="text" placeholder="Điện thoại" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Điện thoại'"
+											 class="autonumeric" style="margin-bottom:10px;width:240px;">
+										</div>
+									</div>
+
+									<div class="row-fluid">
+										<div class="span12">
+											<select name="tp" id="iNoio" style="width:255px;">
+												<option value="" disabled="disabled" selected="selected">Nơi ở...</option>
+												<option value="HA NOI">Hà Nội</option>
+												<option value="TP HCM">TP Hồ Chí Minh</option>
+												<option value="DBSCL">ĐBSCL</option>
+												<option value="AN GIANG">An Giang</option>
+												<option value="BA RIA">Bà Rịa</option>
+												<option value="BAC CAN">Bắc cạn</option>
+												<option value="BAC GIANG">Bắc Giang</option>
+												<option value="BAC LIEU">Bạc Liêu</option>
+												<option value="BAC NINH">Bắc Ninh</option>
+												<option value="BEN TRE">Bến Tre</option>
+												<option value="BIEN HOA">Biên Hòa</option>
+												<option value="BINH DINH">Bình Định</option>
+												<option value="BINH DUONG">Bình Dương</option>
+												<option value="BINH PHUOC">Bình Phước</option>
+												<option value="BINH THUAN">Bình Thuận</option>
+												<option value="CA MAU">Cà Mau</option>
+												<option value="CAN THO">Cần Thơ</option>
+												<option value="CAO BANG">Cao Bằng</option>
+												<option value="DA NANG">Đà Nẵng</option>
+												<option value="DAC LAC">Đắc Lắc</option>
+												<option value="DIEN BIEN">Điện Biên</option>
+												<option value="DONG NAI">Đồng Nai</option>
+												<option value="DONG THAP">Đồng Tháp</option>
+												<option value="GIA LAI">Gia Lai</option>
+												<option value="HA GIANG">Hà Giang</option>
+												<option value="HA NAM">Hà Nam</option>
+												<option value="HA TAY">Hà Tây</option>
+												<option value="HA TINH">Hà Tĩnh</option>
+												<option value="HAI DUONG">Hải Dương</option>
+												<option value="HAI PHONG">Hải Phòng</option>
+												<option value="HOA BINH">Hòa Bình</option>
+												<option value="HUNG YEN">Hưng Yên</option>
+												<option value="KHANH HOA">Khánh Hòa</option>
+												<option value="KON TUM">Kon Tum</option>
+												<option value="LAI CHAU">Lai Châu</option>
+												<option value="LAM DONG">Lâm Đồng</option>
+												<option value="LANG SON">Lạng Sơn</option>
+												<option value="LAO CAI">Lào Cai</option>
+												<option value="LONG AN">Long An</option>
+												<option value="NAM DINH">Nam Định</option>
+												<option value="NGHE AN">Nghệ An</option>
+												<option value="NINH BINH">Ninh Bình</option>
+												<option value="NINH THUAN">Ninh Thuận</option>
+												<option value="PHU THO">Phú Thọ</option>
+												<option value="PHU YEN">Phú Yên</option>
+												<option value="QUANG BINH">Quảng Bình</option>
+												<option value="QUANG NAM">Quảng Nam</option>
+												<option value="QUANG NGAI">Quảng Ngãi</option>
+												<option value="QUANG NINH">Quảng Ninh</option>
+												<option value="QUANG TRI">Quảng Trị</option>
+												<option value="SOC TRANG">Sóc Trăng</option>
+												<option value="SON LA">Sơn La</option>
+												<option value="TAY NINH">Tây Ninh</option>
+												<option value="THAI BINH">Thái Bình</option>
+												<option value="THAI NGUYEN">Thái Nguyên</option>
+												<option value="THANH HOA">Thanh Hóa</option>
+												<option value="THUA THIEN HUE">Thừa Thiên-Huế</option>
+												<option value="TIEN GIANG">Tiền Giang</option>
+												<option value="TRA VINH">Trà Vinh</option>
+												<option value="TUYEN QUANG">Tuyên Quang</option>
+												<option value="KIEN GIANG">Kiên Giang</option>
+												<option value="VINH LONG">Vĩnh Long</option>
+												<option value="VINH PHUC">Vĩnh Phúc</option>
+												<option value="VUNG TAU">Vũng Tàu</option>
+												<option value="YEN BAI">Yên Bái</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="row-fluid">
+										<div class="span12">
+											<select name="totnghiep" id="iTotNghiep" style="width:255px;">
+												<option value="" disabled="disabled" selected="selected">Bạn đã tốt nghiệp ?</option>
+												<option value="THPT">Trung Học Phổ Thông</option>
+												<option value="Trung cap">Trung Cấp</option>
+												<option value="Cao Dang">Cao Đẳng</option>
+												<option value="Dai hoc">Đại Học</option>
+												<option value="Khac">Khác</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="row-fluid">
+										<div class="span12">
+											<select name="nganhhoc" id="iNganh" style="width:255px;">
+												<option value="" disabled="disabled" selected="selected">Ngành Đăng Ký</option>
+												<option value="Kinh Doanh">Kinh Doanh</option>
+												<option value="Ke toan">Kế toán</option>
+												<option value="Cong nghe thong tin">Công nghệ thông tin</option>
+												<option value="Marketing">Marketing</option>
+												<option value="Dieu duong">Điều dưỡng</option>
+												<option value="Du lich, khach san">Du lịch, khách sạn</option>
+												<option value="Thiet ke do hoa, noi that">Thiết kế đồ họa, nội thất</option>
+												<option value="Xay dung, kien truc">Xây dựng, kiến trúc</option>
+												<option value="Khac">Khác</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="row-fluid">
+										<div class="span12">
+											<input id="iEmail" type="text" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'"
+											 style="width:240px;">
+										</div>
+									</div>
+
+									<div class="formFoot" style="top:390px;">
+										<p id="note" style="position:absolute;top:57px;z-index:999;color:red;font-size:11pt;margin-left:35px;"></p>
+										<button type="submit" class="btn" id="registe_btn" style="margin:0;"><span style="text-shadow: 1px 1px #3A3C49;">Đăng
+												ký</span></button>
+										<span class="leftSide">
+										</span>
+										<span class="rightSide">
+
+										</span>
+									</div>
+								</fieldset>
+								<input id="diemtuyensinh" type="hidden" name="diemtuyensinh" value=".CROSS"><input id="keyword" type="hidden"
+								 name="keyword" value="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Slider -->
+
+			<!-- Features -->
+			<section class="items tips first generic-section  text-center">
+				<div class="container">
+					<p class="left" style="left: 0px;margin:30px 0 50px 0;"><img src="img/landing-page_03.png" /></p>
+
+					<div class="clear"></div>
+					<div class="row-fluid bottom" style="bottom: 0px;width: 100%">
+						<div class="span3 item first" style="">
+							<span class="ico"><img src="./img/step-1.png" alt="icon"></span>
+							<font face="Arial, Helvetica, sans-serif" style="color:#8FB834;font-size:20px;"><b>BƯỚC 1: ĐĂNG KÝ</b></font>
+							<p style="font-size:17px;margin-top:10px;color:#000;">Đăng ký để lại thông tin của bạn</p>
+						</div>
+						<div class="span3 item second" style="">
+							<span class="ico"><img src="./img/step-2.png" alt="icon"></span>
+							<font face="Arial, Helvetica, sans-serif" style="color:#8FB834;font-size:20px;"><b>BƯỚC 2: ĐƯỢC TƯ VẤN TỪ BỘ
+									PHẬN TUYỂN SINH</b></font>
+							<p style="font-size:17px;margin-top:10px;color:#000;">Chuyên gia tư vấn của chúng tôi sẽ giúp bạn chọn ngành học
+								phù hợp</p>
+						</div>
+						<div class="span3 item third" style="">
+							<span class="ico"><img src="./img/step-3.png" alt="icon"></span>
+							<font face="Arial, Helvetica, sans-serif" style="color:#8FB834;font-size:20px;"><b>BƯỚC 3: HOÀN THÀNH HỒ SƠ</b></font>
+							<p style="font-size:17px;margin-top:10px;color:#000;">Chuyên gia tư vấn sẽ hỗ trợ bạn hoàn thành hồ sơ nhập học
+								và visa chu đáo</p>
+						</div>
+						<div class="span3 item last" style="">
+							<span class="ico"><img src="./img/step-4.png" alt="icon"></span>
+							<font face="Arial, Helvetica, sans-serif" style="color:#8FB834;font-size:20px;"><b>BƯỚC 4: TRẢI NGHIỆM HỌC TẬP
+									QUỐC TẾ</b></font>
+							<p style="font-size:17px;margin-top:10px;color:#000;">Bắt đầu học tập tại môi trường giáo dục hàng đầu thế giới</p>
+						</div>
+					</div>
+				</div>
+			</section><!-- .container -->
+			<!-- end Features -->
+
+			<!-- reg button -->
+			<a href="#" onclick="scrollToRegiste();">
+				<div style="width:100%;height:100px;margin:0px 0 0 0;">
+					<input type="submit" name="reg" value="" style="background: url('img/btn-green.png') no-repeat;color:#FFF;width:172px;height:42px;margin: 22px 0 0 0px;border:0;border-radius:8px;font-weight:bold;">
+				</div>
+			</a>
+			<!-- End -->
+
+			<!-- Why -->	
+			<section class="items tips why generic-section  text-center" style="padding-bottom:50px;">
+				<div class="container" style="background-color:#E4E4E4;">
+					<p class="right" style="right: 0px;margin: 50px 0 50px 0;"><img src="img/landing-page_07.png" /></p>
+					<div class="clear"></div>
+					<div class="row-fluid bottom" style="bottom: 0px;width: 100%">
+						<div class="span3 item first" style="width:159px;margin-left:120px;">
+							<div class="avatar">
+								<img src="./img/benefit-1.jpg" alt="">
+								<span>
+									<p align="center" style="margin-top:25px;">
+										<font face="Arial, Helvetica, sans-serif" style="font-size:20px;color:#FFF;">CHỈ CẦN XÉT DUYỆT HỒ SƠ</font>
+										<p></p>
+								</span>
+							</div>
+							<p align="center" style="margin-left:5px;">
+								<font face="Arial, Helvetica, sans-serif" color="#000" style="font-size:15px;">Không cần thi đầu vào</font>
+							</p>
+							<div class="clear"></div>
+						</div>
+						<div class="span3 item second" style="width:159px;margin-left:20px;">
+							<div class="avatar">
+								<img src="./img/benefit-2.jpg" alt="">
+								<span>
+									<p align="center" style="margin-top:25px;">
+										<font face="Arial, Helvetica, sans-serif" style="font-size:20px;color:#FFF;">XÉT VISA ƯU TIÊN</font>
+									</p>
+								</span>
+							</div>
+							<p align="center" style="margin-left:5px;">
+								<font face="Arial, Helvetica, sans-serif" color="#000" style="font-size:15px;">Không cần chứng minh tài chính</font>
+							</p>
+							<div class="clear"></div>
+						</div>
+						<div class="span3 item third" style="width:159px;margin-left:20px;">
+							<div class="avatar">
+								<img src="./img/benefit-3.jpg" alt="">
+								<span>
+									<p align="center" style="margin-top:25px;">
+										<font face="Arial, Helvetica, sans-serif" style="font-size:20px;color:#FFF;">DU HỌC TIẾT KIỆM</font>
+										<p></p>
+								</span>
+							</div>
+							<p align="center" style="margin-left:5px;">
+								<font face="Arial, Helvetica, sans-serif" color="#000" style="font-size:15px;">Học phí và phí sinh hoạt cạnh
+									tranh</font>
+							</p>
+							<div class="clear"></div>
+						</div>
+						<div class="span3 item third" style="width:159px;margin-left:20px;">
+							<div class="avatar">
+								<img src="./img/benefit-4.jpg" alt="">
+								<span>
+									<p align="center" style="margin-top:25px;">
+										<font face="Arial, Helvetica, sans-serif" style="font-size:20px;color:#FFF;">GIẢNG VIÊN CHUYÊN GIA</font>
+										<p></p>
+								</span>
+							</div>
+							<p align="center" style="margin-left:5px;">
+								<font face="Arial, Helvetica, sans-serif" color="#000" style="font-size:15px;">Đội ngũ giáo viên là những
+									chuyên gia trong các lĩnh vực chuyên môn, giàu kinh nghiệm trong việc giảng dạy học sinh quốc tế</font>
+							</p>
+							<div class="clear"></div>
+						</div>
+						<div class="span3 item third" style="width:159px;margin-left:20px;">
+							<div class="avatar">
+								<img src="./img/benefit-5.jpg" alt="">
+								<span>
+									<p align="center" style="margin-top:25px;">
+										<font face="Arial, Helvetica, sans-serif" style="font-size:20px;color:#FFF;">10 ĐẠI HỌC HÀNG ĐẦU</font>
+										<p></p>
+								</span>
+							</div>
+							<p align="center" style="margin-left:5px;">
+								<font face="Arial, Helvetica, sans-serif" color="#000" style="font-size:15px;">250 chương trình chuyển tiếp vào
+									các trường Đại học hàng đầu của Úc sẽ giúp sinh viên hoàn thành con đường học vấn đỉnh cao</font>
+							</p>
+							<div class="clear"></div>
+						</div>
+						<div class="span3 item third" style="width:159px;margin-left:20px;">
+							<div class="avatar">
+								<img src="./img/benefit-6.jpg" alt="">
+								<span>
+									<p align="center" style="margin-top:25px;">
+										<font face="Arial, Helvetica, sans-serif" style="font-size:20px;color:#FFF;">LÀM VIỆC TẠI ÚC</font>
+										<p></p>
+								</span>
+							</div>
+							<p align="center" style="margin-left:5px;">
+								<font face="Arial, Helvetica, sans-serif" color="#000" style="font-size:15px;">Sau khi tốt nghiệp, học sinh
+									được phép ở lại làm việc thêm 2 năm tại Úc</font>
+							</p>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+			</section><!-- .container -->
+			<!-- end Why -->
+
+			<!-- Why 2 -->
+			<section class="items tips why generic-section  text-center" style="background:#CE9D3E;">
+				<div class="container" style="background: url(img/benefit-2-bg.jpg);height:615px;"">    		
+			<p class=" right"
+				 style="right: 0px;margin:50px 0 50px 0;"><img src="img/landing-page_11.png" /></p>
+					<div class="clear"></div>
+					<div class="row-fluid bottom" style="bottom: 0px;">
+						<div class="span3 item first" style="width:220px;margin-left:120px">
+							<div class="avatar">
+								<img src="./img/benefit-2-1.png" alt="" style="width:160px;height:160px;">
+								<span style="width:160px;height:160px;border-radius:70pt;background-color:#8FB934;">
+									<p align="center" style="margin-top:45px;">
+										<font face="Arial, Helvetica, sans-serif" style="font-size:18px;color:#FFF;">ĐẠI DIỆN CHÍNH THỨC CỦA
+											SOUTHBANK</font>
+										<p></p>
+								</span>
+							</div>
+							<font face="Arial, Helvetica, sans-serif" style="color:#FFF;font-size:20px;"><b>VỀ CHÚNG TÔI</b></font>
+							<p style="font-size:17px;margin-top:10px;color:#000;text-align:left;">Công ty tư vân du học LisaHo do ông Kelvin
+								Chu - người Úc, có nhiều năm kinh nghiệm trong lĩnh vực giáo dục và đào tạo nghề tại Úc thành lập. Là đại diện
+								tuyển sinh chính thức của Học viện công nghệ Southbank</p>
+							<div class="clear"></div>
+						</div>
+						<div class="span3 item second" style="width:220px;">
+							<div class="avatar">
+								<img src="./img/benefit-2-2.png" alt="" style="width:161px;height:160px;">
+								<span style="width:159px;height:159px;border-radius:70pt;background-color:#8FB934;">
+									<p align="center" style="margin-top:65px;">
+										<font face="Arial, Helvetica, sans-serif" style="font-size:18px;color:#FFF;">SỰ KHÁC BIỆT</font>
+									</p>
+								</span>
+							</div>
+							<font face="Arial, Helvetica, sans-serif" style="color:#FFF;font-size:20px;"><b>Giá trị <font style="font-size:22px;">"3C"</font></b></font>
+							<p style="font-size:17px;margin-top:10px;color:#000;text-align:left;">Học sinh nhận được sự tư vấn hoàn thiện:<br />-
+								Củng cố nền tảng<br />- Chọn trường phù hợp<br />- Cơ hội nghề nghiệp</p>
+							<div class="clear"></div>
+						</div>
+						<div class="span3 item third" style="width:220px;" style="width:160px;height:160px;">
+							<div class="avatar">
+								<img src="./img/benefit-2-3.png" alt="">
+								<span style="width:160px;height:160px;border-radius:70pt;background-color:#8FB934;">
+									<p align="center" style="margin-top:65px;">
+										<font face="Arial, Helvetica, sans-serif" style="font-size:18px;color:#FFF;">TƯ VẤN CHUYÊN NGHIỆP</font>
+										<p></p>
+								</span>
+							</div>
+							<font face="Arial, Helvetica, sans-serif" style="color:#FFF;font-size:20px;"><b>MIỄN PHÍ TƯ VẤN 100%</b></font>
+							<p style="font-size:17px;margin-top:10px;color:#000;text-align:left;">Tất cả các chuyên gia tư vấn luôn sát cánh
+								bên bạn, giúp bạn lựa chọn đúng đắn để đạt mục tiêu và ước mơ du học</p>
+							<div class="clear"></div>
+						</div>
+						<div class="span3 item third" style="width:220px;">
+							<div class="avatar">
+								<img src="./img/benefit-2-4.png" alt="" style="width:160px;height:160px;">
+								<span style="width:160px;height:160px;border-radius:70pt;background-color:#8FB934;">
+									<p align="center" style="margin-top:65px;">
+										<font face="Arial, Helvetica, sans-serif" style="font-size:18px;color:#FFF;">HỖ TRỢ DU HỌC</font>
+										<p></p>
+								</span>
+							</div>
+							<font face="Arial, Helvetica, sans-serif" style="color:#FFF;font-size:20px;"><b>QUÀ TẶNG GIÁ TRỊ</b></font>
+							<p style="font-size:17px;margin-top:10px;color:#000;text-align:left;"><b>1.</b> Voucher $200 khóa học "Tạo đột
+								phá" của Trường doanh nhân Dale Carnegie<br /><b>2.</b> Hỗ trợ $200 phí vé máy bay<br /><b>3.</b> Hỗ trợ $200
+								lệ phí thi IELTS</br>(*) Học sinh được chọn 1 trong 3 phần quà trên</p>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+			</section><!-- .container -->
+			<!-- end Why 2 -->
+
+			<!--Video List-->
+			<section class="video generic-section  text-center" style="width:100%;">
+				<div class="container">
+					<p align="center" style="margin:50px 0 50px 0;"><img src="img/landing-page_15.png" /></p>
+					<div class="row-fluid">
+						<div class="span7 left" style="left: 0px;">
+							<div id="video">
+								<img src="./img/object-left.png" alt="">
+							</div>
+						</div>
+						<div class="span5 right" style="margin-top: 130px; right: 0px;">
+							<ul class="list-features text-left">
+								<li style="font-size:17px;"><img src="img/object-right.png" /></li><br><br>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- reg button -->
+				<a href="#" onclick="scrollToRegiste();">
+					<div style="width:100%;height:100px;margin:0px 0 0 0;">
+						<input type="submit" name="reg" value="" style="background: url('img/btn-orange.png') no-repeat;color:#FFF;width:172px;height:42px;margin:0px 0 0 0px;border:0;border-radius:8px;font-weight:bold;">
+					</div>
+				</a>
+				<!-- End -->
+			</section>
+			<!--End Video List-->
+
+
+
+			<!-- Start University -->
+			<section class="items tips why generic-section  text-center" style="padding-bottom:50px;">
+				<div class="container" style="background-color:#E4E4E4;">
+					<p class="right" style="right: 0px;margin:50px 0 50px 0;"><img src="img/landing-page_19.png" /></p>
+					<div class="clear"></div>
+					<div class="row-fluid bottom" style="bottom: 0px;">
+						<div class="span3 item first" style="width:135px;margin-left:100px;">
+							<div>
+								<img src="./img/University-1.jpg" alt="">
+							</div>
+							<p align="center" style="margin-left:5px;">
+								<font face="Arial, Helvetica, sans-serif" color="#000" style="font-size:12px;">Australian<br />Catholic
+									University</font>
+							</p>
+							<div class="clear"></div>
+						</div>
+						<div class="span3 item second" style="width:135px;margin-left:20px;">
+							<div>
+								<img src="./img/University-2.jpg" alt="">
+
+							</div>
+							<p align="center" style="margin-left:5px;">
+								<font face="Arial, Helvetica, sans-serif" color="#000" style="font-size:12px;">Central Queensland<br />University</font>
+							</p>
+							<div class="clear"></div>
+						</div>
+						<div class="span3 item third" style="width:135px;margin-left:20px;">
+							<div>
+								<img src="./img/University-3.jpg" alt="">
+
+							</div>
+							<p align="center" style="margin-left:5px;">
+								<font face="Arial, Helvetica, sans-serif" color="#000" style="font-size:12px;">University of<br />Sunshine
+									Coast</font>
+							</p>
+							<div class="clear"></div>
+						</div>
+						<div class="span3 item third" style="width:135px;margin-left:20px;">
+							<div>
+								<img src="./img/University-4.jpg" alt="">
+
+							</div>
+							<p align="center" style="margin-left:5px;">
+								<font face="Arial, Helvetica, sans-serif" color="#000" style="font-size:12px;">Queensland University<br />of
+									Technology</font>
+							</p>
+							<div class="clear"></div>
+						</div>
+						<div class="span3 item third" style="width:135px;margin-left:20px;">
+							<div>
+								<img src="./img/University-5.jpg" alt="">
+
+							</div>
+							<p align="center" style="margin-left:5px;">
+								<font face="Arial, Helvetica, sans-serif" color="#000" style="font-size:12px;">Southern Cross<br />University</font>
+							</p>
+							<div class="clear"></div>
+						</div>
+						<div class="span3 item third" style="width:135px;margin-left:20px;">
+							<div>
+								<img src="./img/University-6.jpg" alt="">
+
+							</div>
+							<p align="center" style="margin-left:5px;">
+								<font face="Arial, Helvetica, sans-serif" color="#000" style="font-size:12px;">University of<br />Southern
+									Queensland</font>
+							</p>
+							<div class="clear"></div>
+						</div>
+						<div class="span3 item third" style="width:135px;margin-left:20px;">
+							<div>
+								<img src="./img/University-7.jpg" alt="">
+
+							</div>
+							<p align="center" style="margin-left:5px;">
+								<font face="Arial, Helvetica, sans-serif" color="#000" style="font-size:12px;">Griffith University</font>
+							</p>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+			</section><!-- .container -->
+			<!-- end University -->
+
+			<!--Testimonials-->
+			<section class="testimonials" style="height:540px;background-color:#8CB33E;">
+				<div class="container" style="width:1280px;background: url(img/emotion-bg.jpg) no-repeat;">
+					<div class="row-fluid bottom" style="bottom: 0px;">
+						<div class="span12">
+							<ul class="list-testimonials rslides rslides1" id="slider2" style="">
+								<li id="rslides1_s0" class="" style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; -webkit-transition: opacity 500ms ease-in-out; transition: opacity 500ms ease-in-out;">
+									<img src="./img/Slide1.png" alt="">
+								</li>
+								<li id="rslides1_s1" style="float: left; position: relative; opacity: 1; z-index: 2; display: list-item; -webkit-transition: opacity 500ms ease-in-out; transition: opacity 500ms ease-in-out;"
+								 class="rslides1_on">
+									<img src="./img/Slide2.png" alt="">
+								</li>
+								<li id="rslides1_s2" style="float: none; position: absolute; opacity: 0; z-index: 1; display: list-item; -webkit-transition: opacity 500ms ease-in-out; transition: opacity 500ms ease-in-out;"
+								 class="">
+									<img src="./img/Slide3.png" alt="">
+								</li>
+								<li id="rslides1_s3" style="float: none; position: absolute; opacity: 0; z-index: 1; display: list-item; -webkit-transition: opacity 500ms ease-in-out; transition: opacity 500ms ease-in-out;"
+								 class="">
+									<img src="./img/Slide4.png" alt="">
+								</li>
+							</ul>
+							<a href="#" class="rslides_nav rslides1_nav prev" style="width:50px;height:60px;postion:relative;top:20px;left:120px;"></a><a
+							 href="#" class="rslides_nav rslides1_nav next" style="width:50px;height:60px;position:relative;top:20px;right:-480px;"></a>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--End Testimonials-->
+			<section style="width:100%;background-color:#8D6000;height:20px;">
+			</section>
+			<!-- Start Contact -->
+			<section class="items text-center" style="width:100%;background:#E49B18;height:250px;">
+				<div class="container" style="background-color:#E49B18;padding:45px 0 30px 10px;">
+					<p align="center" class="intro-text left" style="margin-bottom:15px;"><img src="img/landing-page_27.png" /></p>
+					<p align="center" class="intro-text right">
+						<font face="Arial, Helvetica, sans-serif" color="#FFF" style="font-size:20px;line-height:15pt;"><b>ĐẠI DIỆN CHÍNH
+								THỨC CỦA HỌC VIỆN CÔNG NGHỆ SOUTHBANK, ÚC</b><br />Công ty tư vấn du học Lisa Ho<br />38/14 Trần Khắc Chân,
+							Quận 1, Tp. Hồ Chí Minh<br />Hotline: 0963.9999.30 - 0909.343.048<br />Website: www.lisahostudyoverseas.com</font>
+					</p>
+					<div class="clear"></div>
+				</div>
+			</section>
+			<!-- end Contact -->
+
+		</center>
+
+		<div style="width:100%;height:50px;background-color:#8FB934;bottom:0;position:fixed;z-index:9999;">
+			<h3 style="color:#000;font-size:20px;text-align:center;"><b style="width:500px;margin-left:100px;float:center">KHAI
+					GIẢNG: THÁNG 07/2014 VÀ THÁNG 01/2015</b><a rel="nofollow" href="javascript:void(0)" style="height:50px;width:50px;float:right;margin:-20px 100px 0 0;z-index:9999999;"
+				 id="itemscrolltop" onclick="scrollToTop();"><img border="0" src="./img/go-to-top.png"></a></h3>
+
+		</div>
+		<div id='loading_wrap' style='position:fixed; height:100%, width:100%; overflow:hidden; top:0; left:0;display:none;background-color:black;width:100%;height:100%;opacity:0.8;padding-top:300px;padding-left:42%;z-index:9999999999;'>
+			<img src='img/loading.gif'>
+		</div>
 		
-
-
-        </div>
-        <div class=" banner">
-            <h2>
-                HỌC VIỆN CÔNG NGHỆ
-            </h2>
-            <h1> SOUTHBANK, ÚC</h1>
-            <h4>HỌC ĐỂ CHUYỂN TIẾP VÀO CÁC TRƯỜNG ĐẠI HỌC LỚN TẠI ÚC VỚI CHI PHÍ THẤP</h4>
-            <p><b>ƯU ĐIỂM</b></p>
-            <ul>
-                <li>
-                    Là học viện công lập hàng đầu, lớn nhất và lâu đời nhất tại bang Queensland của Úc với hơn 150 năm thành lập
-                </li>
-                <li>
-                    Đào tạo chương trình học liên thuông với các trường đại học lớn của Úc
-                </li>
-            </ul>
-        </div>
-        <div class="form"></div>
-        <form>
-            <legend> HỌC VIÊN CÔNG NGHỆ SOUTHBANK, ÚC </legend>
-            <p>
-                Bạn còn thắc mắc về du học Úc? 
-            </p>>
-                <div class="join-form">
-                  <div class="form-group col-md-6">
-                    <br/>
-                    <input type="text" class="form-control" id="inputNane" placeholder="Họ và tên">
-                  </div>
-                  <div class="form-group col-md-6">
-                    
-                    <input type="text" class="form-control" id="inputPhoneNumber" placeholder="Điện thoại">
-                  </div>
-                </div>
-    
-                  <div class="form-group col-md-4">
-                    
-                    <select id="address" class="form-control">
-                      <option selected>Nơi ở</option>
-                      <option>...</option>
-                    </select>
-                  </div>
-                  <div class="form-group col-md-4">
-                    
-                        <select id="gradudate" class="form-control">
-                          <option selected>Bạn đã tốt nghiệp?</option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                
-                <div class="form-group col-md-4">
-                    
-                        <select id="gradudate" class="form-control">
-                          <option selected>Ngành đăng ký</option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                
-            <div class="form-group col-md-6">
-              
-              <input type="email" class="form-control" id="inputemail" placeholder="Email">
-            </div>
-          
-                <button type="submit" class="btn btn-primary">Đăng ký</button>
-              </form>
-            
-            <div class="intro">
-                   
-                    </div>
-                    <section class="asp1 row">
-                            <div class="wapper container">
-                            <h2>Các bước để du học thành công</h2>
-                            <div class="asp1_1 col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <div class="item">
-                                <img src="img/step-1.png"/>
-                                <h4>BƯỚC 1: ĐĂNG KÝ</h4>
-                                <p>Đăng ký để lại thông tin của bạn</p>
-                                </div>
-                            </div>
-                            <div class="asp1_1 col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <div class="item">
-                                <img src="img/step-2.png">
-                                <h4>BƯỚC 2: ĐƯỢC TƯ VẤN TỪ BỘ PHẬN TUYỂN SINH</h4>
-                                <p>Chuyên gia tư vấn của chúng tôi sẽ giúp bạn chọn ngành phù hợp</p>
-                                    </div>
-                            </div>
-                            <div class="asp1_1 col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <div class="item">
-                                <img src="img/step-3.png"/>
-                                <h4>BƯỚC 3: HOÀN THÀNH HỒ SƠ</h4>
-                                <p>Chuyên gia tư vấn sẽ hỗ trợ bạn nhập học và visa chu đáo</p>
-                                    </div>
-                            </div>
-                            </div>
-                            <div class="asp1_1 col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                    <div class="item">
-                                    <img src="img/step-4.png"/>
-                                    <h4>BƯỚC 4: TRẢI NGHIỆM HỌC TẬP QUỐC TẾ</h4>
-                                    <p>Bắt đầu học tập tại môi trường giáo dục hàng đầu thế giới</p>
-                                        </div>
-                                </div>
-                               
-                        </section>  
-                        <section class="dangky">
-                                <img src="img/btn-green.png" alt=""/>
-                            </section>
-                        <section class="asp6 row">
-                                    <h2>LỢI ÍCH KHI THAM GIA HỌC TẬP TẠI SOUTHBANK</h2>
-                                    <div class="asp6_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                        <div class="header6"><img src="img/benefit-1.jpg"/></div>
-                                        <div class="content6">Không cần thi đầu vào</div>
-                                    </div>
-                                    <div class="asp6_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                        <div class="header6"><img src="img/benefit-2.jpg"/></div>
-                                        <div class="content6">Không cần chứng minh tài chính</div>
-                                    </div>
-                                    <div class="asp6_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                        <div class="header6"><img src="img/benefit-3.jpg"/></div>
-                                        <div class="content6">Học phí và phí sinh hoạt cạnh tranh</div>
-                                       
-                                    </div>
-                                    <div class="asp6_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                        <div class="header6"><img src="img/benefit-4.jpg"/></div>
-                                        <div class="content6">Đội ngũ giáo viên là các chuyên gia trong các lĩnh vực chuyên môn, giàu kinh nghiệm trong việc giảng dạy học sinh quốc tế</div>
-                                    </div>
-                                    <div class="asp6_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                            <div class="header6"><img src="img/benefit-5.jpg"/></div>
-                                            <div class="content6">250 chương trình chuyển tiếp vào các trường Đại học hàng đầu của Úc sẽ giúp sinh viên hoàn thành con đường học vấn đỉnh cao</div>
-                                    </div>
-                                    <div class="asp6_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                             <div class="header6"><img src="img/benefit-6.jpg"/></div>
-                                             <div class="content6">Sau khi tốt nghiệp, học sinh được phép ở lại thêm 2 năm làm việc tại Úc</div>
-                                    </div>
-                         
-                                </section>
-
-                                <section class="asp4 row">
-                                        <h2>LỢI ÍCH KHI LÀM HỒ SƠ DU HỌC TẠI CÔNG TY LISAHO</h2>
-                                        <div class="asp4_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                            <div class="header4"><img src="img/benefit-2-1.png"/></div>
-                                            <div class="content4"><h4>Về chúng tôi</h4>
-                                                <p>Công ty tư vấn du học LisaHo do ông Kenvin Chu - người Úc, có nhiều năm kinh nghiệm trong lĩnh vực giáo dục và đào tạo nghề tại Úc thành lập. Là đại diện tuyển sinh chính thức của Học viện công nghệ Southbank </p></div>
-                                        </div>
-                                        <div class="asp4_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                            <div class="header3"><img src="img/benefit-2-2.png"/></div>
-                                            <div class="content3"><h4>Giá trị "3C"</h4>
-                                            Học sinh được nhận sự tư vấn hoàn thiện:<ul>
-                                                <li>Củng cố nền tảng</li>
-                                                <li>Chọn trường phù hợp </li>
-                                                <li>Cơ hội nghề nghiệp</li>
-                                            </ul></div>
-                                        </div>
-                                        <div class="asp4_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                            <div class="header3"><img src="img/benefit-2-3.png"/></div>
-                                            <div class="content3"><h4>MIỄN PHÍ TƯ VẤN 100%</h4><p>
-                                                Tất cả các chuyên gia tư vấn luôn sát cánh bên cạnh bạn, giúp bạn lựa chọn đúng đắn để đạt mục tiêu và ước mơ du học
-                                            </p></div>
-                                           
-                                        </div>
-                                        <div class="asp4_1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                            <div class="header3"><img src="img/benefit-2-4.png"/></div>
-                                            <div class="content3"><h4>QUÀ TẶNG GIÁ TRỊ</h4><ol>
-                                                <li>Voucher $200 khóa học "tạo đột phá cảu Trường doanh nhân Dale Carnegie</li>
-                                                <li>Hỗ trợ $200 phí vé máy bay</li>
-                                                <li>Hỗ trợ &200 lệ phí thi IELTS</li>
-                                                <p>(*) Học sinh được chọn 1</p>
-                                            </ol></div>
-                                        </div>
-                                    
-                             
-                                    </section>
-                                    <section class="galery">
-                                        <h2>NGÀNH ĐÀO TẠO & ĐỐI TƯỢNG TUYỂN SINH</h2>
-                                        <div class="image-galerycol-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                            <img src="img/object-left.png"/>
-                                            <img src="img/object-right.png"/>
-                                        </div>
-                                    </section>
-                                    <section class="dangky">
-                                            <img src="img/btn-orange.png" alt=""/>
-                                        </section>
-                                        <section class="asp7 row">
-                                            <div class="asp7_1 col-lg-3 col-md-3 col-sm-3 col-xs-12"></div>
-                                            <div class="header7">
-                                                <h2> CƠ HỘI CHUYỂN TIẾP CÁC ĐẠI HỌC DANH TIẾNG</h2>
-                                            </div>
-                                            <div class="content7">
-                                                <img src="img/University-1.jpg"/>aaaa
-                                                <img src="img/University-2.jpg"/>bbbb
-                                                <img src="img/University-3.jpg"/>cccc
-                                                <img src="img/University-4.jpg"/>dddd
-                                                <img src="img/University-5.jpg"/>eeee
-                                                <img src="img/University-6.jpg"/>ffff
-                                                <img src="img/University-7.jpg"/>gggg
-                                            </div>
-                                        </section>
-                                        <section class="feeling">
-                                                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                                                        <div class="carousel-inner">
-                                                          <div class="carousel-item active">
-                                                            <img class="d-block w-100" src="img/emotion-bg-1.jpg" alt="First slide">
-                                                          </div>
-                                                        
-                                                        </div>
-                                                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                          <span class="sr-only">Previous</span>
-                                                        </a>
-                                                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                          <span class="sr-only">Next</span>
-                                                        </a>
-                                                      </div>
-
-                                        </section>
-                                        <section class = "bar">
-                                            <div class="colorbar"><p style="background-color: #a04213">.</p></div>
-
-                                        </section>
-                                        <section class="contact">
-                                            
-
-                                        </section>
-                                        <section class="footer-container">
-                                            <div class="footer">
-
-                                            </div>
-
-                                        </section>
-
-              
+	</div>
+	<div style='width:1px;height:1px;display:none'><img src='http://static.novanet.vn/adverclient.js?code=793'></div>
+	<div style='width:1px;height:1px;display:none'><img src='http://static.novanet.vn/adverclient.js?code=794'></div>
 </body>
 
 </html>
