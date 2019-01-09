@@ -38,7 +38,7 @@
 				<div class="slide-banner">
 					<img src="${images }/slide.jpg" alt="slide-banner">
 				</div>
-				<form class="register-form" action="#" name="registForm"
+				<form class="register-form" action="home" name="registForm"
 					method="post">
 					<h6>HỌC VIỆN CÔNG NGHỆ SOUTHBANK, ÚC</h6>
 					<p class="sub-title-form">Bạn còn thắc mắc về du học Úc? Vui
