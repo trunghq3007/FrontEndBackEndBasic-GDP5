@@ -28,9 +28,9 @@ public class DbConnection {
         // url
         static final String URL = "jdbc:mysql://localhost:3306/asm_qldh?autoReconnect=true&useSSL=false";
         // userName
-        static final String USER_NAME = "root";
+        static final String USER_NAME = "user1";
         // passWord
-        static final String PASSWORD = "ngominhanh";
+        static final String PASSWORD = "123abc";
 
         /**
          * Create by: minhanh - CMC

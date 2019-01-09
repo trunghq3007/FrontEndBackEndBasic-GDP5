@@ -4,6 +4,8 @@ public interface Constants {
 	interface contact {
 		//
 		 public static final String CONTACT_ALLCONTACT = "SELECT * FROM asm_qldh.contact;";
+		 public static final String CONTACT_INSERT = "INSERT INTO asm_qldh.contact(name, phone, address, graduate, major, email) values (?,?,?,?,?,?);";
+		 
 		 public static final String CONTACT_ID = "id";
 		 public static final String CONTACT_NAME = "name";
 		 public static final String CONTACT_PHONE = "phone";

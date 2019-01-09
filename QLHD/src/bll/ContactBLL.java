@@ -2,6 +2,7 @@ package bll;
 
 import java.util.List;
 
+import com.controller.ContactController;
 import com.dal.ContactDAL;
 import com.entity.Contact;
 
@@ -22,9 +23,23 @@ public class ContactBLL implements BaseBLL<Contact>{
 		return null;
 	}
 
+	public Contact createContactObject() {
+		String[] userData = ContactController.getUserData();
+		Contact contact = new Contact();
+		contact.setName(userData[0]);
+		contact.setPhone(Integer.parseInt(userData[1]));
+		contact.setAddress(userData[2]);
+		contact.setGraduate(userData[3]);
+		contact.setMajor(userData[4]);
+		contact.setEmail(userData[5]);
+		
+		return contact;
+	}
+	
 	@Override
 	public int insert(Contact object) {
 		// TODO Auto-generated method stub
+		contactDAL.insert(object);
 		return 0;
 	}
 

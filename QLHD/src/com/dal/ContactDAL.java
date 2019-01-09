@@ -1,18 +1,14 @@
 package com.dal;
 
-import java.util.List;
-
-import com.entity.Contact;
-
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.mysql.jdbc.Constants;
-import com.mysql.jdbc.PreparedStatement;
+import com.entity.Contact;
 import com.utils.DbConnection;
 
 public class ContactDAL implements BaseDAL<Contact>{
@@ -53,8 +49,25 @@ public class ContactDAL implements BaseDAL<Contact>{
 
 	@Override
 	public int insert(Contact object) {
-		// TODO Auto-generated method stub
-		return 0;
+		int numEffect = -1;
+		Connection conn = DbConnection.connect();
+		try {
+			PreparedStatement ppstmt = conn.prepareStatement(com.utils.Constants.contact.CONTACT_INSERT);
+			ppstmt.setString(1, object.getName());
+			ppstmt.setInt(2, object.getPhone());
+			ppstmt.setString(3, object.getAddress());
+			ppstmt.setString(4, object.getGraduate());
+			ppstmt.setString(5, object.getMajor());
+			ppstmt.setString(6, object.getEmail());
+			numEffect = ppstmt.executeUpdate();
+			
+			ppstmt.close();
+			conn.close();
+		} catch(SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return numEffect;
 	}
 
 	@Override
