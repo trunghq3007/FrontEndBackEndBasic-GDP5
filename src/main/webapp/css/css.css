@@ -1,0 +1,148 @@
+
+            .header{
+                height: 80px;
+                width: 100%;
+                border-bottom: 2px solid #80808036;
+            }
+            .logo-header{
+                text-align: center;
+                padding-left: 20%;
+                float: left;
+                padding-top: 10px;
+            }
+            .contact-phone{
+                position: relative;
+                padding-left: 10%;
+            }
+            .contact-phone b{
+                position: absolute;
+                top: 35px;
+            }
+            .slide{
+                background-color: red;
+                text-align: center
+            }
+            .frm-regis{
+                width: 350px;
+                height: 500px;
+                background-color: white;
+                border-top: 5px solid #8fb934;
+                box-shadow: 0px 0px 20px   grey;
+                border-radius: 1%;
+                float : right; 
+                display: block;
+                margin: 90px 60px 0px 0px;
+            }
+            .form-horizontal input{
+                width: 70%;
+                margin: auto; 
+            }
+            .form-horizontal select{
+                width: 70%;
+                margin: auto; 
+            }
+            .form-horizontal button{
+                width: 75%;
+                height: 40px;
+                margin: auto; 
+                background-color: #8fb934;
+                margin-bottom: 10px;
+            }
+            .form-horizontal button:hover{
+                background-color: #8fb934e0
+            }
+            .footer{
+                background-color: #8fb934;
+            }
+            .step img{
+                background-color: rgb(222, 151, 23);
+            }
+            .step h4{
+                color: #8fb934e0;
+            }
+            .step h5{
+                margin-top: -10px;
+            }
+.session2{
+    background-color: #80808014;
+    height: 400px;
+}
+.session3{
+    background-color: #CE9D3E;
+    height: 450px;
+}
+.session4{
+    height: 500px;
+}
+#bto:hover{
+    background-color: #db8e1aa3;
+}
+@media (min-width: 1200px) {
+    .seven-cols .col-md-1,
+    .seven-cols .col-sm-1,
+    .seven-cols .col-lg-1 {
+      width: 14.285714285714285714285714285714%;
+      *width: 14.285714285714285714285714285714%;
+    }
+  }
+  .University{
+    background-color: #80808014;
+    height: 300px;
+  }
+  .error{
+      color: red;
+  }
+  .list-testimonials, .list-testimonials li {
+	color: #253458;
+	list-style: none outside none;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.list-testimonials li img {
+	display: block;
+	float: none;
+	height: auto !important;
+	margin: 0 auto 3%;
+	width: auto !important;
+	/*border: 4px solid rgba(0, 0, 0, 0.1);*/
+	width:100%;
+}
+.list-testimonials li p.comment {
+	font-size: 3em;
+	font-style: italic;
+	font-weight: bold;
+	line-height: 1.5em;
+	padding: 0 40px;
+}
+.list-testimonials li p.date {
+	font-size: 1.4em;
+	margin-top: 2.5%;
+	position: relative;
+	text-transform: uppercase;
+	padding: 1.4% 25px 0;
+}
+.list-testimonials li p.date span {
+	position: absolute;
+	width: 32px;
+	top: 0px;
+	left: 50%;
+	height: 2px;
+	display: block;
+	margin-left: -16px;
+	background: #FFF;
+}
+.ico{
+    width: 260px;
+    height: 164px;
+    background-color: #de9717;
+}
+.ico img{
+    padding-top: 40px;
+    padding-left: 76px;
+    padding-left: 41p;
+    height: auto;
+    width: 65%;
+    text-align: center;
+}
