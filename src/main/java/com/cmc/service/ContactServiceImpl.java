@@ -3,15 +3,17 @@ package com.cmc.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.cmc.dao.ContactDao;
 import com.cmc.entity.Contact;
 
+@Service
 public class ContactServiceImpl implements ContactService {
 
 	@Autowired
 	private ContactDao contactDao;
-	
+
 	@Override
 	public List<Contact> allContact() {
 		// TODO Auto-generated method stub
