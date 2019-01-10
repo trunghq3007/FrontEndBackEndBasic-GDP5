@@ -20,8 +20,6 @@ import com.cmc.service.UserService;
 public class UserController {
 	
 
-    
-
     @Autowired
     private utils.UserValidator userValidator;
     
