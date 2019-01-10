@@ -9,10 +9,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
+import dao.Constant;
 import entity.UserInfo;
 import service.UserInfoDAOImpl;
-import util.Constant;
 
 @WebServlet(name = "home", urlPatterns = { "/home" })
 public class HomeController extends HttpServlet {
@@ -23,6 +24,10 @@ public class HomeController extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		HttpSession httpSession = request.getSession();
+		String isLogined = (String) httpSession.getAttribute(Constant.Account.SAVE_ACCOUNT_INTO_SESSION);
+		request.setAttribute("isLogined", isLogined);
+		System.out.println(isLogined);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/views/home.jsp");
 		dispatcher.forward(request, response);
 	}

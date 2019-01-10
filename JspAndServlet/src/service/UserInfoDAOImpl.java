@@ -4,9 +4,9 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+import dao.Constant;
 import dao.UserInfoDAO;
 import entity.UserInfo;
-import util.Constant;
 import util.DBConnection;
 
 public class UserInfoDAOImpl implements UserInfoDAO {

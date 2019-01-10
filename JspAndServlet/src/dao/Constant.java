@@ -1,4 +1,4 @@
-package util;
+package dao;
 
 public interface Constant {
 
@@ -9,10 +9,14 @@ public interface Constant {
 		public static final String PASSWORD = "password";
 
 		// query
-		public static final String SQL_GET_ACCOUNT = "select * from account(" + USER_NAME + ", " + PASSWORD + ") where "
-				+ USER_NAME + "=?";
+		public static final String SQL_GET_ACCOUNT = "select * from account where " + USER_NAME + "=? and " + PASSWORD
+				+ "=?";
+		// common
+		public static final String SAVE_ACCOUNT_INTO_SESSION = "sessionSave";
+		public static final String SAVE_ACCOUNT_INTO_COOKIES = "cookieSave";
 
 		// message response
+		public static final String LOGIN_FAIL = "<h4>Đăng nhập thất bại</h4><a href=\"login\">Quay lại</a>";
 	}
 
 	public interface UserInfo {
@@ -30,8 +34,8 @@ public interface Constant {
 				+ ADDRESS + ", " + GRADUATION + ", " + MAJOR + ", " + EMAIL + ") values(?,?,?,?,?,?)";
 
 		// message response
-		public static final String INSERT_USER_INFO_SUCCESS = "<h4>�?ăng kí thành công</h4><a href=\"home\">Quay lại</a>";
-		public static final String INSERT_USER_INFO_FAIL = "�?ăng kí thất bại";
+		public static final String INSERT_USER_INFO_SUCCESS = "<h4>Đăng kí thành công</h4><a href=\"home\">Quay lại</a>";
+		public static final String INSERT_USER_INFO_FAIL = "Đăng kí thất bại";
 
 	}
 

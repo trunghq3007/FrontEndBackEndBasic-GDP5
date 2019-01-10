@@ -1,6 +1,6 @@
-/com/
 /controller/
 /dao/
-/service/
 /entity/
+/filter/
+/service/
 /util/

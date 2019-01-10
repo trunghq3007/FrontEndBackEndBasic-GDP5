@@ -21,15 +21,23 @@
 				<div class="row">
 					<div class="col-md-6">
 						<img class="logo" src="${images }/logo-lisaho.png" alt="logo-page">
-						<img class="logo" src="${images }/logo-southbank.png" alt="logo-page">
+						<img class="logo" src="${images }/logo-southbank.png"
+							alt="logo-page">
 					</div>
 					<div class="col-md-5 phone-contact">
 						<b class="phone-contact-content">HOTLINE: 0963.9999.30 -
 							0909.343.048</b>
 					</div>
-					<div class="col-md-1 phone-contact">
-						<a class="phone-contact-content" href="#"><u>Login</u></a>
-					</div>
+					<c:if test="${empty isLogined }">
+						<div class="col-md-1 phone-contact">
+							<a class="phone-contact-content" href="login"><u>Login</u></a>
+						</div>
+					</c:if>
+					<c:if test="${not empty isLogined }">
+						<div class="col-md-1 phone-contact">
+							<a class="phone-contact-content" href="logout"><u>Logout</u></a>
+						</div>
+					</c:if>
 				</div>
 			</div>
 		</nav>
@@ -63,8 +71,7 @@
 						<option value="3">Lịch sử đảng</option>
 					</select> <input class="form-control" type="text" placeholder="Email"
 						name="email">
-					<button id="submitButton" class="btn btn-default">Đăng
-						kí</button>
+					<button id="submitButton" class="btn btn-default">Đăng kí</button>
 				</form>
 			</div>
 		</div>

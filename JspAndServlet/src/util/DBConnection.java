@@ -12,7 +12,7 @@ public class DBConnection {
 	// userName
 	static final String USER_NAME = "root";
 	// passWord
-	static final String PASSWORD = "1234";
+	static final String PASSWORD = "";
 
 	public static Connection connect() {
 		// load driver

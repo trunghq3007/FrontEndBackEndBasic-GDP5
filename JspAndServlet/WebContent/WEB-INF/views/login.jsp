@@ -11,13 +11,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="${css }/bootstrap.css">
-<link rel="stylesheet" href="${css }/custom.css">
+<link rel="stylesheet" href="${css }/login.css">
 <title>Login</title>
 </head>
 
 <body>
 	<div class="login-wrapper">
-		<form id="loginForm" action="#">
+		<form id="loginForm" action="login" method="post">
 			<h2>Welcome</h2>
 			<div class="input-wrapper">
 				<input type="text" name="username" required> <label>Username</label>
@@ -30,7 +30,7 @@
 					value="">Remember me</label>
 			</div>
 			<div class="submit-wrapper">
-				<button class="btn btn-primary">Submit</button>
+				<button id="btnLogin" class="btn btn-primary">Submit</button>
 			</div>
 		</form>
 	</div>
