@@ -21,7 +21,7 @@ public class UserController {
 	
 
     @Autowired
-    private utils.UserValidator userValidator;
+    private com.cmc.utils.UserValidator userValidator;
     
 	@Autowired
 	private UserService userService;
