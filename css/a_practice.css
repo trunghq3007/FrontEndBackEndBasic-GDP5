@@ -1,0 +1,456 @@
+/*-------------*/
+/*common.css */
+/*-------------*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, img, small, strong, ol, ul, li, form, label, table, caption, tr, td, footer, header {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family:Arial, Helvetica, sans-serif;
+}
+footer, header, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	text-rendering: optimizeLegibility;
+	font-weight: 400;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #fff;
+	font-size: 62.5%;
+
+}
+ol, ul {
+	list-style: none;
+}
+a:hover {
+	text-decoration: none;
+	outline: 0;
+}
+a:focus {
+	outline: 0;
+	text-decoration: none;
+}
+a {
+	outline: 0;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {	
+	font-weight: normal;
+	margin: 1em 0;
+	font-family:Arial, Helvetica, sans-serif;
+}
+section {
+	overflow: hidden;
+}
+.row-fluid {
+	position: relative;
+}
+/*-------------*/
+/* header.css */
+/*-------------*/
+header {	
+	border-bottom: 1px solid #304c8e;
+	padding: 10px 0 40px 0;
+}
+header span{
+	font-size:16pt;
+	font-weight:bold;
+}
+/*chỉnh vị trí của logo*/
+#logo{
+	margin:-15px 20px 0px 0px;
+	width:150px;
+}
+#hotline{
+	margin:20px 150px 0px 30px;
+	font-size:16pt;
+	font-weight:bold;
+}
+#container-menu{
+	margin-bottom:-25px;
+}
+.login-input{
+	width:150px;
+}
+.password-input{
+	width:150px;
+}
+.form-inline input{
+	display: inline-block;
+	*display: inline;
+	margin-bottom: 0;
+	vertical-align: middle;
+	*zoom: 1
+}
+.form-inline div{
+	display: inline-block;
+}
+.form-inline button{
+	display: inline-block;
+}
+#form-alignment{
+	margin:15px 0px 10px -10px;
+}
+/*-------------*/
+/* slider.css */
+/*-------------*/
+
+.join-form {
+	position: relative;
+	overflow: hidden;
+}
+/*Xử lí ảnh slider*/
+.slider-container {
+	height: 100%;
+	width: 100%;
+	position: absolute; /*position:absolute; the element is positioned absolutely to its first positioned parent.*/
+	z-index: 1; /*Ưu tiên vị trí bị chèn*/
+	/*position và z-index luôn đi với nhau, lí do là z-index hoàn toàn mất tác dụng với những element không chỉ định position*/
+	/*https://kipalog.com/posts/Ban-co-hieu-ro-z-index-trong-CSS-hay-khong--*/
+	}
+.form-container {
+	background: url(../img/registe-bg.png) no-repeat;
+	margin: 3.5% 0;
+	width: 314px;	
+	position: relative;	
+	height:480px;
+	}
+/*Container chèn lên ảnh slider*/
+.join-form .container {
+	position: relative;
+	z-index: 999;
+}
+.join-form select{
+	width: 255px;
+}
+.join-form input{
+	width: 240px;
+}
+
+/*Xử lí chiều rộng, ví trí các row trong form*/
+#join-form{
+	margin-bottom:-25px;
+	background-color:whitesmoke;
+	height:600px;
+}
+#txtName{
+	margin:150px 0 10px;
+}
+#txtPhone{
+	margin-bottom:10px;
+}
+
+.join-form .formFoot {
+	top:390px;
+	bottom: 65px;
+	height: 101px;
+	left: 0;
+	margin-bottom: -40px;
+	position: absolute;
+	width: 100%;
+	
+}
+.join-form .formFoot:before, .join-form .formFoot:after {
+	bottom: -15px;
+	content: " ";
+	display: block;
+	width: 20px;
+	height: 116px;
+	position: absolute;
+	top: 0;
+}
+.join-form .formFoot:before {
+	right: -20px;
+}
+.join-form .formFoot:after {
+	left: -20px;
+}
+.join-form .formFoot .btn {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #8FB834;
+	border-radius: 3px 3px 3px 3px;
+	color: #FFF;
+	display: block;
+	font-size: 22px;
+	font-weight:bold;
+	margin: 43px auto;
+	width: 250px;
+	height:50px;
+	margin-top: 0;
+}
+
+/*Thông báo lỗi đăng nhập*/
+#note{
+	position:absolute;
+	top:57px;
+	z-index:999;
+	color:red;
+	font-size:11pt;
+	margin-left:35px;
+}
+#btnRegisterContent{
+	text-shadow: 1px 1px #3A3C49;
+}
+
+/*-------------*/
+/*features.css*/
+/*-------------*/
+.tips.first.generic-section {
+	padding: 2.7% 0 0%;
+}
+.generic-section .container {
+	position: relative;
+	z-index: 2;
+}
+/*Chia thành 4 cột có thuộc tính như nhau*/
+.span3.item.first, 
+.span3.item.second,
+.span3.item.third,
+.span3.item.last{
+	width:260px;
+	margin-left:50px;
+}
+.tips .item {
+	padding: 0;
+	cursor: pointer;
+}
+.tips .item span.ico {
+	position: relative;
+}
+.tips .item span.ico:after {
+	border-color: #DE9717 transparent transparent;
+	border-right: 10px solid transparent;
+	border-style: solid;
+	border-width: 10px 10px 0;
+	bottom: -10px;
+	content: " ";
+	display: block;
+	height: 0;
+	left: 50%;
+	margin-left: -10px;
+	margin-top: 0;
+	position: absolute;
+	width: 0;
+}
+
+.tips .item h4 {
+	color: #34497c;
+	font-size: 2.2em;
+	margin: 0 0 0.5em;
+	font-weight:bold;
+}
+.tips .item p {
+	font-size: 13px;
+	color: #555555;
+	line-height:24px;
+}
+.tips .item span.ico {
+	background: none repeat scroll 0 0 #DE9717;
+	display: block;
+	height: 0;
+	margin: 0 auto 25px;
+	padding-bottom: 63%;
+	width: 100%;
+}
+.tips .item:hover span.ico {
+	background: #8FB834;
+}
+.tips .item:hover span.ico:after {
+	border-top-color: #8FB834;
+}
+.tips .item:hover h4, .tips .item:hover p {
+	color:#253458;
+}
+.tips .item span.ico img {
+	height: auto;
+	margin-top: 11%;
+	width: 40%;
+}
+/*Phần chữ*/
+span.font-content{
+	color:#8FB834;
+	font-size:20px;
+}
+#font-content{
+	font-size:17px;
+	margin-top:10px;
+	color:#000;
+}
+
+#to-the-register{
+	width:100%;
+	height:100px;
+	margin:0px 0 0 0;
+}
+#btn-toRegister{
+	background: url('../img/btn-green.png') no-repeat;
+	color:#FFF;
+	width:172px;
+	height:42px;
+	margin: 22px 0 0 0px;
+	border:0;
+	border-radius:8px;
+	font-weight:bold;
+}
+
+
+/*-------------*/
+/*why.css*/
+/*-------------*/
+.why.generic-section {
+	background: none repeat scroll 0 0 #E4E4E4;
+	
+}
+.generic-section .container {
+	position: relative;
+	z-index: 2;
+}
+#p_landing_page{
+	right: 0px;
+	margin: 50px 0 50px 0;	
+}
+.span3.item.first, 
+.span3.item.second,
+.span3.item.third,
+.span3.item.last{
+	width:260px;
+	margin-left:50px;
+}
+.tips .item {
+	padding: 0;
+	cursor: pointer;
+}
+.tips .item p {
+	font-size: 13px;
+	color: #555555;
+	line-height:24px;
+}
+#section_why{
+	padding-bottom:50px;
+}
+#containerWhy{
+	background-color:#E4E4E4;
+}
+#setBottom{
+	bottom: 0px;
+}
+#setBottom #firstCol{
+	width:159px;
+	margin-left:120px;
+}
+#setBottom #midCol{
+	width:159px;
+	margin-left:20px;
+}
+
+
+
+.tips .item .avatar {
+	-moz-border-radius: 2px 2px 2px 2px;
+	-webkit-border-radius: 2px 2px 2px 2px;
+	border-radius: 2px 2px 2px 2px;
+	margin: 0 auto 9%;
+	width: 159px;
+	overflow: hidden;
+	position: relative;
+}
+
+.tips .item:hover .avatar span {
+	top: 0%;
+}
+.tips .item .avatar img {
+	opacity: 1;
+	z-index: 3;
+	position: relative;
+	-webkit-transition: 500ms linear all;
+	-moz-transition: 500ms linear all;
+	-ms-transition: 500ms linear all;
+	-o-transition: 500ms linear all;
+	transition: 500ms linear all;
+	display: block;
+}
+.tips .item:hover .avatar img {
+	opacity: 0;
+}
+.tips .item .avatar span {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: block;
+	background: #DE9717;/*#34497c;*/
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.tips .item .avatar span em {
+	font-style: normal;
+	color: white;
+	display: block;
+	font-family: 'BebasRegular';
+	font-size: 3.9em;
+	line-height: 1.5em;
+	position: absolute;
+	top: 50%;
+	margin-top: -1.5em;
+	width: 100%;
+}
+
+.span3.item.first, 
+.span3.item.second, 
+.span3.item.third,
+.span3.item.last{
+	width:260px;
+	margin-left:50px;
+}
+input.btn[type="submit"] {
+	font-family: Arial,Helvetica,sans-serif;
+}
+p.in-block{
+	margin-top:25px;
+}
+p.subtitle{
+	margin-left:5px;
+}
+
+
+/*animations*/
+.left {
+	position: relative;
+	left: -3000px;
+	-webkit-transition: all .6s;
+	transition: all .6s;
+}
+.right {
+	position: relative;
+	right: -3000px;
+	-webkit-transition: all .6s;
+	transition: all .6s;
+}
+.bottom {
+	position: relative;
+	bottom: -1000px;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+.rotate {
+	top: -3000px;
+	opacity: 0;
+	-moz-transform: rotate(-4000deg);
+	-o-transform: rotate(-4000deg);
+	-webkit-transform: rotate(-4000deg);
+	-webkit-transition: all 2s;
+	transition: all 2s;
+}
+.rotate-normal {
+	opacity: 1;
+	top: 0;
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+}

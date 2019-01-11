@@ -42,10 +42,6 @@
 	text-indent: -9999px;
 	width: 19px;
 }
-.join-form {
-	position: relative;
-	overflow: hidden;
-}
 
 .join-form .formFoot {
 	
@@ -97,7 +93,7 @@
 }
 
 .form-container {
-	background: url(img/registe-bg.png) no-repeat;
+	background: url(../img/registe-bg.png) no-repeat;
 	margin: 3.5% 0;
 	width: 314px;	
 	position: relative;	

@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<html lang="">
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -14,233 +16,259 @@
     <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
 
     <!-- Custom Template Styles -->
-    <link href="css/common.css" rel="stylesheet" media="screen">
-    <link href="css/copyright.css" rel="stylesheet" media="screen">
-    <link href="css/features.css" rel="stylesheet" media="screen">
-    <link href="css/footer.css" rel="stylesheet" media="screen">
-    <link href="css/form.css" rel="stylesheet" media="screen">
-    <link href="css/generic_section.css" rel="stylesheet" media="screen">
-    <link href="css/header.css" rel="stylesheet" media="screen">
-    <link href="css/multimedia.css" rel="stylesheet" media="screen">
-    <link href="css/testimonials.css" rel="stylesheet" media="screen">
-    <link href="css/why.css" rel="stylesheet" media="screen">
+    <link href="css/a_practice.css" rel="stylesheet" media="screen">
 
 
     <!-- Script -->
     <script type="text/javascript" src="jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/javascript.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body screen_capture_injected="true">
-
-    <!--end HOTLINE -->
-    <div id="div_content">
+<body>
+    <div id="div-content">
         <center>
+            <!--Header-->
             <header>
-                <div class="container clearfix" style="margin-bottom:-25px;">
+                <div id="container-menu" class="container clearfix">
                     <!--logo-->
-                    <a href="http://lisahostudyoverseas.com" id="logo" class="pull-left" style="margin:-15px 20px 0px 150px;"
-                        target="_blank"><img src="img/logo-lisaho.png" style="width:150px;"></a>
-                    <a href="www.southbank.edu.au" id="logo" class="pull-left" target="_blank"><img src="img/logo-southbank.png"></a>
-                    <div class="pull-right" style="margin:20px 150px 0px 0px">
-                        <span style="font-size:16pt;font-weight:bold">HOTLINE: 0963.9999.30 - 0909.343.048</span>
+                    <img id="logo" class="pull-left" src="img/logo-lisaho.png">
+                    <img class="pull-left" src="img/logo-southbank.png">
+                    <div id="hotline" class="pull-left">
+                        <span>HOTLINE: 0963.9999.30 - 0909.343.048</span>
+                    </div>
+                    <!--form login-->
+                    <div id="form-alignment" class="pull-right">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <input class="login-input" placeholder="Email" type="text" id="txtEmailLogin">
+                            </div>
+                            <div class="form-group">
+                                <input class="password-input" type="password" class="form-control" id="inputPassword2"
+                                    placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn  btn-success">Đăng nhập</button>
+                        </form>
                     </div>
                 </div>
             </header>
+            <!--End header-->
 
-            <!-- Slider -->
-            <section class="join-form" style="margin-bottom:-25px;background-color:whitesmoke;height:600px;">
+            <!--Slider-->
+            <section id="join-form" class="join-form">
                 <div class="slider-container">
-                    <img src="img/slide.jpg" alt="">
+                    <img src="img/slide.jpg">
                 </div>
                 <div class="container">
                     <div class="row-fluid">
                         <div class="span12">
-                            <div class="form-container pull-right box animated pulse" style="margin:120px 150px 0 0">
+                            <div class="form-container pull-right" style="margin:120px 150px 0 0">
+                                <!--The <fieldset> tag is used to group related elements in a form.
+                The <fieldset> tag draws a box around the related elements.-->
                                 <fieldset>
+                                    <!--txtName row-->
                                     <div class="row-fluid">
                                         <div class="span12">
-                                            <input id="iName" type="text" placeholder="Họ và tên" onfocus="this.placeholder = ''"
-                                                onblur="this.placeholder = 'Họ và tên'" style="margin:150px 0 10px 0;width:240px;">
+                                            <input id="txtName" type="text" placeholder="Họ và tên" onfocus="this.placeholder = ''"
+                                                onblur="this.placeholder = 'Họ và tên'">
                                         </div>
                                     </div>
-
+                                    <!--txtPhone row-->
                                     <div class="row-fluid">
                                         <div class="span12">
-                                            <input id="iPhone" type="text" placeholder="Điện thoại" onfocus="this.placeholder = ''"
-                                                onblur="this.placeholder = 'Điện thoại'" class="autonumeric" style="margin-bottom:10px;width:240px;">
+                                            <input id="txtPhone" type="text" placeholder="Điện thoại" onfocus="this.placeholder = ''"
+                                                onblur="this.placeholder = 'Điện thoại'">
                                         </div>
                                     </div>
-
+                                    <!--drpCity row-->
                                     <div class="row-fluid">
                                         <div class="span12">
-                                            <select name="tp" id="iNoio" style="width:255px;">
-                                                <option value="" disabled="disabled" selected="selected">Nơi ở...</option>
-                                                <option value="HA NOI">Hà Nội</option>
-                                                <option value="TP HCM">TP Hồ Chí Minh</option>
+                                            <select name="drpcity" id="drpCity">
+                                                <option value="hanoi">Hà Nội</option>
+                                                <option value="hcmcity">TP Hồ Chí Minh</option>
+                                                <option value="danang">Đà Nẵng</option>
                                             </select>
                                         </div>
                                     </div>
-
+                                    <!--drpGraduate row-->
                                     <div class="row-fluid">
                                         <div class="span12">
-                                            <select name="totnghiep" id="iTotNghiep" style="width:255px;">
+                                            <select name="drpGraduate" id="drpGraduate">
                                                 <option value="" disabled="disabled" selected="selected">Bạn đã tốt
-                                                    nghiệp ?</option>
-                                                <option value="THPT">Trung Học Phổ Thông</option>
-                                                <option value="Trung cap">Trung Cấp</option>
-                                                <option value="Cao Dang">Cao Đẳng</option>
-                                                <option value="Dai hoc">Đại Học</option>
-                                                <option value="Khac">Khác</option>
+                                                    nghiệp?</option>
+                                                <option value="highSchool">Trung Học Phổ Thông</option>
+                                                <option value="middleSchool">Trung Cấp</option>
+                                                <option value="colllege">Cao Đẳng</option>
+                                                <option value="university">Đại Học</option>
+                                                <option value="other">Khác</option>
                                             </select>
                                         </div>
                                     </div>
-
+                                    <!--drpMajor-->
                                     <div class="row-fluid">
                                         <div class="span12">
-                                            <select name="nganhhoc" id="iNganh" style="width:255px;">
-                                                <option value="" disabled="disabled" selected="selected">Ngành Đăng Ký</option>
-                                                <option value="Kinh Doanh">Kinh Doanh</option>
-                                                <option value="Ke toan">Kế toán</option>
-                                                <option value="Cong nghe thong tin">Công nghệ thông tin</option>
-                                                <option value="Marketing">Marketing</option>
-                                                <option value="Dieu duong">Điều dưỡng</option>
-                                                <option value="Du lich, khach san">Du lịch, khách sạn</option>
-                                                <option value="Thiet ke do hoa, noi that">Thiết kế đồ họa, nội thất</option>
-                                                <option value="Xay dung, kien truc">Xây dựng, kiến trúc</option>
-                                                <option value="Khac">Khác</option>
+                                            <select name="drpMajor" id="drpMajor">
+                                                <option value="" disabled="disabled" selected="selected">Ngành đăng kí</option>
+                                                <option value="business">Kinh Doanh</option>
+                                                <option value="infomationTechnology">Công nghệ thông tin</option>
+                                                <option value="marketing">Marketing</option>
+                                                <option value="hotel">Khách sạn</option>
+                                                <option value="graphicDesign">Thiết kế đồ họa</option>
                                             </select>
                                         </div>
                                     </div>
-
+                                    <!--txtMail-->
                                     <div class="row-fluid">
                                         <div class="span12">
-                                            <input id="iEmail" type="text" placeholder="Email" onfocus="this.placeholder = ''"
-                                                onblur="this.placeholder = 'Email'" style="width:240px;">
+                                            <input id="txtMail" type="email" placeholder="Email" onfocus="this.placeholder = ''"
+                                                onblur="this.placeholder = 'Email'">
                                         </div>
                                     </div>
-
-                                    <div class="formFoot" style="top:390px;">
-                                        <p id="note" style="position:absolute;top:57px;z-index:999;color:red;font-size:11pt;margin-left:35px;"></p>
-                                        <button type="submit" class="btn" id="registe_btn" style="margin:0;"><span
-                                                style="text-shadow: 1px 1px #3A3C49;">Đăng
-                                                ký</span></button>
-                                        </span>
+                                    <!--submit button: btnRegister-->
+                                    <div class="formFoot">
+                                        <p id="note"></p>
+                                        <button type="submit" class="btn" id="btnRegister">
+                                            <span id="btnRegisterContent"> Đăng ký </span>
+                                        </button>
                                     </div>
                                 </fieldset>
-                                <input id="diemtuyensinh" type="hidden" name="diemtuyensinh" value=".CROSS"><input id="keyword"
-                                    type="hidden" name="keyword" value="">
+                                <input id="diemtuyensinh" type="hidden" name="diemtuyensinh" value=".CROSS">
+                                <input id="keyword" type="hidden" name="keyword" value="">
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- End Slider -->
+            <!--End slider-->
 
             <!-- Features -->
             <section class="tips first generic-section  text-center">
                 <div class="container">
-                    <p class="left" style="left: 0px;margin:30px 0 50px 0;"><img src="img/landing-page_03.png" /></p>
+                    <p class="left" style="left: 0px;margin:30px 0 50px 0;">
+                        <img src="img/landing-page_03.png" />
+                    </p>
                     <div class="row-fluid bottom" style="bottom: 0px;">
+                        <!--Cột 1-->
                         <div class="span3 item first">
-                            <span class="ico"><img src="img/step-1.png" alt="icon"></span>
-                            <font face="Arial, Helvetica, sans-serif" style="color:#8FB834;font-size:20px;"><b>BƯỚC 1:
-                                    ĐĂNG KÝ</b></font>
-                            <p style="font-size:17px;margin-top:10px;color:#000;">Đăng ký để lại thông tin của bạn</p>
+                            <span class="ico">
+                                <img src="img/step-1.png" alt="icon">
+                            </span>
+                            <span class="font-content">
+                                <b>BƯỚC 1: ĐĂNG KÝ</b>
+                            </span>
+                            <p id="font-content">Đăng ký để lại thông tin của bạn</p>
                         </div>
+                        <!--Cột 2-->
                         <div class="span3 item second">
-                            <span class="ico"><img src="img/step-2.png" alt="icon"></span>
-                            <font face="Arial, Helvetica, sans-serif" style="color:#8FB834;font-size:20px;"><b>BƯỚC 2:
-                                    ĐƯỢC TƯ VẤN TỪ BỘ
-                                    PHẬN TUYỂN SINH</b></font>
-                            <p style="font-size:17px;margin-top:10px;color:#000;">Chuyên gia tư vấn của chúng tôi sẽ
-                                giúp bạn chọn ngành học
-                                phù hợp</p>
+                            <span class="ico">
+                                <img src="img/step-2.png" alt="icon">
+                            </span>
+                            <span class="font-content">
+                                <b>BƯỚC 2: ĐƯỢC TƯ VẤN TỪ BỘ PHẬN TUYỂN SINH</b>
+                            </span>
+                            <p id="font-content">Chuyên gia tư vấn của chúng tôi sẽ giúp bạn chọn ngành học phù hợp</p>
                         </div>
+                        <!--Cột 3-->
                         <div class="span3 item third">
-                            <span class="ico"><img src="img/step-3.png" alt="icon"></span>
-                            <font face="Arial, Helvetica, sans-serif" style="color:#8FB834;font-size:20px;"><b>BƯỚC 3:
-                                    HOÀN THÀNH HỒ SƠ</b></font>
-                            <p style="font-size:17px;margin-top:10px;color:#000;">Chuyên gia tư vấn sẽ hỗ trợ bạn hoàn
-                                thành hồ sơ nhập học
-                                và visa chu đáo</p>
+                            <span class="ico">
+                                <img src="img/step-3.png" alt="icon">
+                            </span>
+                            <span class="font-content">
+                                <b>BƯỚC 3: HOÀN THÀNH HỒ SƠ</b>
+                            </span>
+                            <p id="font-content">Chuyên gia tư vấn sẽ hỗ trợ bạn hoàn thành hồ sơ nhập học và visa chu
+                                đáo</p>
                         </div>
+                        <!--Cột 4-->
                         <div class="span3 item last">
-                            <span class="ico"><img src="img/step-4.png" alt="icon"></span>
-                            <font face="Arial, Helvetica, sans-serif" style="color:#8FB834;font-size:20px;"><b>BƯỚC 4:
-                                    TRẢI NGHIỆM HỌC TẬP
-                                    QUỐC TẾ</b></font>
-                            <p style="font-size:17px;margin-top:10px;color:#000;">Bắt đầu học tập tại môi trường giáo
-                                dục hàng đầu thế giới</p>
+                            <span class="ico">
+                                <img src="img/step-4.png" alt="icon">
+                            </span>
+                            <span class="font-content">
+                                <b>BƯỚC 4: TRẢI NGHIỆM HỌC TẬP QUỐC TẾ</b>
+                            </span>
+                            <p id="font-content">Bắt đầu học tập tại môi trường giáo dục hàng đầu thế giới</p>
                         </div>
                     </div>
                 </div>
-            </section><!-- .container -->
-            <!-- end Features -->
+            </section>
 
             <!-- reg button -->
-            <a href="#" onclick="scrollToRegiste();">
-                <div style="width:100%;height:100px;margin:0px 0 0 0;">
-                    <input type="submit" name="reg" value="" style="background: url('img/btn-green.png') no-repeat;color:#FFF;width:172px;height:42px;margin: 22px 0 0 0px;border:0;border-radius:8px;font-weight:bold;">
+            <a href="#">
+                <div id="to-the-register">
+                    <input id="btn-toRegister" type="submit" name="reg" value="">
                 </div>
             </a>
-            <!-- End -->
+            <!-- End Features -->
 
             <!-- Why -->
-            <section class="items tips why generic-section  text-center" style="padding-bottom:50px;">
-                <div class="container" style="background-color:#E4E4E4;">
-                    <p class="right" style="right: 0px;margin: 50px 0 50px 0;"><img src="img/landing-page_07.png" /></p>
+            <section id="section_why" class="item tips why generic-section  text-center">
+                <div id="containerWhy" class="container">
+                    <p id="p_landing_page" class="right"><img src="img/landing-page_07.png" /></p>
                     <div class="clear"></div>
-                    <div class="row-fluid bottom" style="bottom: 0px;">
-                        <div class="span3 item first" style="width:159px;margin-left:120px;">
+                    <div id="setBottom" class="row-fluid bottom">
+                        <!--First column: "Không cần thi đầu vào"-->
+                        <div id="firstCol" class="span3 item first">
                             <div class="avatar">
                                 <img src="img/benefit-1.jpg" alt="">
                                 <span>
-                                    <p align="center" style="margin-top:25px;">
-                                        <font face="Arial, Helvetica, sans-serif" style="font-size:20px;color:#FFF;">CHỈ
-                                            CẦN XÉT DUYỆT HỒ SƠ</font>
-                                        <p></p>
-                                </span>
-                            </div>
-                            <p align="center" style="margin-left:5px;">
-                                <font face="Arial, Helvetica, sans-serif" color="#000" style="font-size:15px;">Không
-                                    cần thi đầu vào</font>
-                            </p>
-                            <div class="clear"></div>
-                        </div>
-                        <div class="span3 item second" style="width:159px;margin-left:20px;">
-                            <div class="avatar">
-                                <img src="img/benefit-2.jpg" alt="">
-                                <span>
-                                    <p align="center" style="margin-top:25px;">
-                                        <font face="Arial, Helvetica, sans-serif" style="font-size:20px;color:#FFF;">XÉT
-                                            VISA ƯU TIÊN</font>
+                                    <p class="in-block"">
+                                        <font face=" Arial,
+                                        Helvetica, sans-serif" style="font-size:20px;color:#FFF;">
+                                        KHÔNG CẦN THI ĐẦU VÀO
+                                        </font>
                                     </p>
                                 </span>
                             </div>
-                            <p align="center" style="margin-left:5px;">
-                                <font face="Arial, Helvetica, sans-serif" color="#000" style="font-size:15px;">Không
-                                    cần chứng minh tài chính</font>
+                            <p class="subtitle">
+                                <font face="Arial, Helvetica, sans-serif" color="#000" style="font-size:15px;">
+                                    Không cần thi đầu vào
+                                </font>
                             </p>
                             <div class="clear"></div>
                         </div>
-                        <div class="span3 item third" style="width:159px;margin-left:20px;">
+                        <!--Second column: Xét visa ưu tiên-->
+                        <div id="midCol" class="span3 item second">
+                            <div class="avatar">
+                                <img src="img/benefit-2.jpg" alt="">
+                                <span>
+                                    <p class="in-block"">
+                                        <font face=" Arial,
+                                        Helvetica, sans-serif" style="font-size:20px;color:#FFF;">
+                                        XÉT VISA ƯU TIÊN
+                                        </font>
+                                    </p>
+                                </span>
+                            </div>
+                            <p class="subtitle">
+                                <font face="Arial, Helvetica, sans-serif" color="#000" style="font-size:15px;">
+                                    Không cần chứng minh tài chính
+                                </font>
+                            </p>
+                            <div class="clear"></div>
+                        </div>
+                        <!--Third column Du học tiết kiệm-->
+                        <div id="midCol" class="span3 item third">
                             <div class="avatar">
                                 <img src="img/benefit-3.jpg" alt="">
                                 <span>
-                                    <p align="center" style="margin-top:25px;">
+                                    <p class="in-block">
                                         <font face="Arial, Helvetica, sans-serif" style="font-size:20px;color:#FFF;">DU
                                             HỌC TIẾT KIỆM</font>
                                         <p></p>
                                 </span>
                             </div>
-                            <p align="center" style="margin-left:5px;">
-                                <font face="Arial, Helvetica, sans-serif" color="#000" style="font-size:15px;">Học phí
-                                    và phí sinh hoạt cạnh
-                                    tranh</font>
+                            <p class="subtitle">
+                                <font face="Arial, Helvetica, sans-serif" color="#000" style="font-size:15px;">
+                                    Học phí và phí sinh hoạt cạnh tranh
+                                </font>
                             </p>
                             <div class="clear"></div>
                         </div>
-                        <div class="span3 item third" style="width:159px;margin-left:20px;">
+                        <div id="midCol" class="span3 item third">
                             <div class="avatar">
                                 <img src="img/benefit-4.jpg" alt="">
                                 <span>
@@ -250,43 +278,43 @@
                                         <p></p>
                                 </span>
                             </div>
-                            <p align="center" style="margin-left:5px;">
-                                <font face="Arial, Helvetica, sans-serif" color="#000" style="font-size:15px;">Đội ngũ
-                                    giáo viên là những
-                                    chuyên gia trong các lĩnh vực chuyên môn, giàu kinh nghiệm trong việc giảng dạy học
+                            <p class="subtitle">
+                                <font face="Arial, Helvetica, sans-serif" color="#000" style="font-size:15px;">
+                                    Đội ngũ giáo viên là những chuyên gia trong các lĩnh vực chuyên môn, giàu kinh nghiệm trong việc giảng dạy học
                                     sinh quốc tế</font>
                             </p>
                             <div class="clear"></div>
                         </div>
-                        <div class="span3 item third" style="width:159px;margin-left:20px;">
-                            <div class="avatar">
+                        <div id="midCol" class="span3 item third">
+                            <div class=" avatar">
                                 <img src="img/benefit-5.jpg" alt="">
                                 <span>
-                                    <p align="center" style="margin-top:25px;">
-                                        <font face="Arial, Helvetica, sans-serif" style="font-size:20px;color:#FFF;">10
-                                            ĐẠI HỌC HÀNG ĐẦU</font>
-                                        <p></p>
+                                    <p class="in-block">
+                                        <font face="Arial, Helvetica, sans-serif" style="font-size:20px;color:#FFF;">
+                                            10 ĐẠI HỌC HÀNG ĐẦU</font>
+                                    </p>
                                 </span>
                             </div>
-                            <p align="center" style="margin-left:5px;">
+                            <p class="subtitle">
                                 <font face="Arial, Helvetica, sans-serif" color="#000" style="font-size:15px;">250
-                                    chương trình chuyển tiếp vào
-                                    các trường Đại học hàng đầu của Úc sẽ giúp sinh viên hoàn thành con đường học vấn
+                                    chương trình chuyển tiếp vào các trường Đại học hàng đầu của Úc sẽ giúp sinh viên
+                                    hoàn
+                                    thành con đường học vấn
                                     đỉnh cao</font>
                             </p>
                             <div class="clear"></div>
                         </div>
-                        <div class="span3 item third" style="width:159px;margin-left:20px;">
+                        <div id="midCol" class="span3 item third"">
                             <div class="avatar">
                                 <img src="img/benefit-6.jpg" alt="">
                                 <span>
-                                    <p align="center" style="margin-top:25px;">
+                                    <p align="center" class="in-block" >
                                         <font face="Arial, Helvetica, sans-serif" style="font-size:20px;color:#FFF;">LÀM
                                             VIỆC TẠI ÚC</font>
                                         <p></p>
                                 </span>
                             </div>
-                            <p align="center" style="margin-left:5px;">
+                            <p class="subtitle" align="center">
                                 <font face="Arial, Helvetica, sans-serif" color="#000" style="font-size:15px;">Sau khi
                                     tốt nghiệp, học sinh
                                     được phép ở lại làm việc thêm 2 năm tại Úc</font>
@@ -297,11 +325,10 @@
                 </div>
             </section><!-- .container -->
             <!-- end Why -->
-
             <!-- Why 2 -->
             <section class="items tips why generic-section  text-center" style="background:#CE9D3E;">
                 <div class="container" style="background: url(img/benefit-2-bg.jpg);height:615px;"">    		
-			<p class="
+<p class="
                     right" style="right: 0px;margin:50px 0 50px 0;"><img src="img/landing-page_11.png" /></p>
                     <div class="clear"></div>
                     <div class="row-fluid bottom" style="bottom: 0px;">
@@ -560,132 +587,10 @@
         <div id='loading_wrap' style='position:fixed; height:100%, width:100%; overflow:hidden; top:0; left:0;display:none;background-color:black;width:100%;height:100%;opacity:0.8;padding-top:300px;padding-left:42%;z-index:9999999999;'>
             <img src='img/loading.gif'>
         </div>
-        <!-- ======================= JQuery libs =========================== -->
-        <script type="text/javascript" src="jquery/jquery-1.8.2.min.js"></script>
-        <script type="text/javascript" src="jquery/jquery-ui-1.9.2.min.js"></script>
-        <!-- Bootstrap.js-->
-        <script src="jquery/bootstrap.js" type="text/javascript"></script>
-        <script src="jquery/bootstrap-select.min.js" type="text/javascript"></script>
-        <!-- Gallery -->
-        <script type="text/javascript" src="jquery/modernizr.custom.26633.js"></script>
-        <script type="text/javascript" src="jquery/jquery.gridrotator.js"></script>
-        <!-- Slider -->
-        <script type="text/javascript" src="jquery/responsiveslides.min.js"></script>
-        <!-- Controls styles -->
-        <script type="text/javascript" src="jquery/jquery.jstyling.min.js"></script>
-        <!-- Video Responsive-->
-        <script src="jquery/jquery.fitvids.min.js" type="text/javascript"></script>
-        <!-- easing plugin ( optional ) -->
-        <script src="jquery/easing.js" type="text/javascript"></script>
-        <!-- UItoTop plugin -->
-        <script src="jquery/jquery.ui.totop.min.js" type="text/javascript"></script>
-        <!--  Waypoints -->
-        <script type="text/javascript" src="java/waypoints.min.js"></script>
-        <!-- Template custom script  -->
-        <script type="text/javascript" src="jquery/jquery-func.js"></script>
-        <!-- ======================= End JQuery libs ======================= -->
-
-
-
-        <script>
-            function scrollToTop() {
-                $('html, body').animate({ scrollTop: 0 }, 800);
-            }
-            function scrollToRegiste() {
-                $('html, body').animate({ scrollTop: 200 }, 800);
-            }
-            /* Start Click đăng ký handler */
-            var hasBeenClicked = false;
-            $(document).ready(function () {
-                $("#iPhone").keyup(function () {
-                    if (this.value.match(/[^0-9.]/g)) {
-                        this.value = this.value.replace(/[^0-9]/g, '');
-                    }
-                });
-                var iName = $("#iName");
-                var iPhone = $("#iPhone");
-                var iNoio = $("#iNoio");
-                var iTotNghiep = $("#iTotNghiep");
-                var iNganh = $("#iNganh");
-                var iEmail = $("#iEmail");
-                $('#registe_btn').click(function () {
-                    if (!hasBeenClicked) {
-                        hasBeenClicked = true;
-                        if (iName.val() != "" && iPhone.val() != "" && iEmail.val() != "" && validateEmail(iEmail.val()) == true && iPhone.val().length > 8 && iTotNghiep.val() != 0 && iNganh.val() != 0 && iNoio.val() != 0) {
-                            $("#loading_wrap");
-                            var txtName = iName.val();
-                            var txtMobile = iPhone.val();
-                            var txtEmail = iEmail.val();
-                            var txtNganh = iNganh.val();
-                            var txtNoio = iNoio.val();
-                            var txtTotNghiep = iTotNghiep.val();
-                            /*console.log(txtName + "-" + txtMobile + "-"+txtEmail +"-"+txtNganh +"-"+txtNoio+"-"+txtTotNghiep);						*/
-                            var url = location.href;
-                            var myData = { txtName: txtName, txtMobile: txtMobile, txtEmail: txtEmail, txtNganh: txtNganh, txtNoio: txtNoio, txtTotNghiep: txtTotNghiep, URL: url };
-                            jQuery.ajax({
-                                type: "POST",
-                                url: "http://landingpage.novanet.vn/handle/HandleLisaHo.ashx",
-                                dataType: "text",
-                                data: myData,
-                                success: function (msg) {
-                                    sleep(100);
-                                    window.location = "thankyou.html";
-                                },
-                                error: function (xhr, ajaxOptions, thrownError) {
-                                    hasBeenClicked = false;
-                                    $("#loading_wrap").toggle();
-                                }
-                            });
-                        }
-                        else if (iName.val() == "") {
-                            $("#note").html("Bạn chưa nhập tên");
-                            hasBeenClicked = false;
-                        }
-                        else if (iPhone.val().length < 9) {
-                            $("#note").html("Bạn chưa nhập đủ số điện thoại");
-                            hasBeenClicked = false;
-                        }
-                        else if (iNoio.val() == 0 || iNoio.val() == "" || iNoio.val() == "Nơi ở...") {
-                            $("#note").html("Bạn cần chọn nơi ở");
-                            hasBeenClicked = false;
-                        }
-                        else if (iTotNghiep.val() == 0 || iTotNghiep.val() == "" || iTotNghiep.val() == "Bạn đã tốt nghiệp ?") {
-                            $("#note").html("Bạn cần chọn cấp học đã tốt nghiệp");
-                            hasBeenClicked = false;
-                        }
-                        else if (iNganh.val() == 0 || iNganh.val() == "" || iNganh.val() == "Ngành Đăng Ký") {
-                            $("#note").html("Bạn cần chọn ngành học");
-                            hasBeenClicked = false;
-                        }
-                        else if (validateEmail(iEmail.val()) == false) {
-                            $("#note").html("Bạn chưa nhập hoặc nhập sai email");
-                            hasBeenClicked = false;
-                        }
-                    }
-                });
-            });
-            function validateEmail(email) {
-                var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-                if (reg.test(email) == false) {
-                    return false;
-                }
-                else {
-                    return true;
-                }
-            }
-            function sleep(milliseconds) {
-                var start = new Date().getTime();
-                for (var i = 0; i < 1e7; i++) {
-                    if ((new Date().getTime() - start) > milliseconds) {
-                        break;
-                    }
-                }
-            }
-/* End Click đăng ký handler */
-        </script>
+        </center>
     </div>
-    <div style='width:1px;height:1px;display:none'><img src='http://static.novanet.vn/adverclient.js?code=793'></div>
-    <div style='width:1px;height:1px;display:none'><img src='http://static.novanet.vn/adverclient.js?code=794'></div>
+
+
 </body>
 
 </html>
